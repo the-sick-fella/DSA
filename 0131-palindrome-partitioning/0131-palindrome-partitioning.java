@@ -22,8 +22,7 @@ class Solution {
 
     boolean valid(String s, int si, int ei) {
         while (si < ei) {
-            if (s.charAt(si) != s.charAt(ei))
-                return false;
+            if (s.charAt(si) != s.charAt(ei)) return false;
             si++;
             ei--;
         }
