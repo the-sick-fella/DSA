@@ -13,7 +13,6 @@ class Solution {
 
         for (int i = idx; i < s.length(); i++) {
             if (valid(s, idx, i)) {
-
                 curr.add(s.substring(idx, i + 1));
                 p(i + 1, list, s, curr);
                 curr.remove(curr.size() - 1);
