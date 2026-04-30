@@ -1,55 +1,37 @@
 class Solution {
     public int[] sortArray(int[] nums) {
-        ms(nums, 0, nums.length - 1);
+        qs(nums, 0, nums.length-1);
         return nums;
     }
 
-    void ms(int[] nums, int low, int high) {
-        if (low == high)
-            return;
+    void qs(int [] nums, int low, int high){
+        if(low >= high) return;
+        int idx = partition(nums, low, high);
 
-        int mid = (low + high) / 2;
-
-        ms(nums, low, mid);
-        ms(nums, mid + 1, high);
-
-        merge(nums, low, mid, high);
+        qs(nums, low, idx-1);
+        qs(nums, idx+1, high);
     }
 
-    void merge(int[] nums, int low, int mid, int high) {
-        int arr[] = new int[high - low + 1];
+    int partition(int [] nums, int low, int high){
+        int pv = nums[low];
+
         int i = low;
-        int j = mid + 1;
-        int idx = 0;
+        int j = high;
 
-        while (i <= mid && j <= high) {
-            if (nums[i] < nums[j]) {
-                arr[idx] = nums[i];
-                i++;
-            }
+        while(i < j){
+            while(nums[i]<= pv && i<high) i++;
+            while(nums[j]> pv && j>low) j--;
 
-            else {
-                arr[idx] = nums[j];
-                j++;
-            }
-            idx++;
+            if(i<j) swap(nums, i, j);
         }
 
-        while (i <= mid) {
-            arr[idx] = nums[i];
-            i++;
-            idx++;
-        }
+        swap(nums, j, low);
+        return j;
+    }
 
-        while (j <= high) {
-            arr[idx] = nums[j];
-            j++;
-            idx++;
-        }
-
-        for (int num : arr) {
-            nums[low] = num;
-            low++;
-        }
+    void swap(int [] nums, int i, int j){
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
 }
