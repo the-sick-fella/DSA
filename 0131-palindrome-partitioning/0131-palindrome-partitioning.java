@@ -1,30 +1,34 @@
 class Solution {
     public List<List<String>> partition(String s) {
         List<List<String>> list = new ArrayList<>();
-        p(0, list, s, new ArrayList<>());
+        p(s, 0, list, new ArrayList<>());
         return list;
     }
 
-    void p(int idx, List<List<String>> list, String s, List<String> curr) {
-        if (idx >= s.length()) {
+    void p(String s, int idx, List<List<String>> list, List<String> curr){
+        if(idx == s.length()){
             list.add(new ArrayList<>(curr));
             return;
         }
 
-        for (int i = idx; i < s.length(); i++) {
-            if (valid(s, idx, i)) {
-                curr.add(s.substring(idx, i + 1));
-                p(i + 1, list, s, curr);
-                curr.remove(curr.size() - 1);
+
+        for(int i = 1; i<=s.length(); i++){
+            if(idx+i > s.length()) return;
+            String sub = s.substring(idx, idx+i);
+
+            if(palindrome(sub)){
+                curr.add(sub);
+
+                p(s, idx + i, list, curr);
+
+                curr.remove(curr.size() -1);
             }
         }
     }
 
-    boolean valid(String s, int si, int ei) {
-        while (si < ei) {
-            if (s.charAt(si) != s.charAt(ei)) return false;
-            si++;
-            ei--;
+    boolean palindrome (String s){
+        for(int i = 0; i<s.length()/2; i++){
+            if(s.charAt(i) != s.charAt(s.length() -1 -i)) return false;
         }
 
         return true;
