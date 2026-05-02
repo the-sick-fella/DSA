@@ -1,63 +1,62 @@
 class Solution {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> list = new ArrayList<>();
-        boolean[][] matrix = new boolean[n][n];
-        queens(matrix, 0, list);
+        char [][] board = new char[n][n];
+        for(char[] r : board){
+            Arrays.fill(r, '.');
+        }
+        
+        solve(n, 0, list, board);
         return list;
     }
 
-    void queens(boolean[][] nums, int row, List<List<String>> list){
-        if(row >= nums.length){
-            List<String> temp = new ArrayList<>();
-            for(boolean r[] : nums){
-                StringBuilder sb = new StringBuilder();
-                for(boolean c : r){
-                    if(c) sb.append('Q');
-                    else sb.append('.');
-                }
-                temp.add(sb.toString());
+    void solve(int n, int row, List<List<String>> list, char[][] board){
+        if(row >= n){
+            List<String> curr = new ArrayList<>();
+            for(char [] r : board){
+                curr.add(new String(r));
             }
-            list.add(temp);
-
+            list.add(new ArrayList<>(curr));
             return;
         }
 
-        for(int i = 0; i<nums.length; i++){
-            if(!qp(nums, row, i)){
-                nums[row][i] = true;
-                queens(nums, row+1, list);
-                nums[row][i] = false;
+
+        for(int c = 0; c<n; c++){
+            if(valid(n, row, c, board)){
+                board[row][c] = 'Q';
+                
+                solve(n, row+1, list, board);
+
+                board[row][c] = '.';
             }
         }
     }
 
-    boolean qp(boolean[][] nums, int r, int c) {
-        int i = 0;
-        for (; i < r; i++) {
-            if (nums[i][c])
-                return true;
+    boolean valid(int n, int row, int col, char [][] board){
+        //row
+        int r = 0;
+        for(; r<row; r++){
+            if(board[r][col] == 'Q') return false;
         }
 
-        i = r - 1;
-        int j = c - 1;
-        while (i >= 0 && j >= 0) {
-            if (nums[i][j])
-                return true;
-            i--;
-            j--;
+        //left diagonal
+        r = row-1;
+        int c = col - 1;
+        while(r>=0 && c>=0){
+            if(board[r][c] == 'Q') return false;
+            r--;
+            c--;
         }
 
-        i = r - 1;
-        j = c + 1;
-        while (i >= 0 && j < nums.length) {
-            if (nums[i][j])
-                return true;
-
-            i--;
-            j++;
+        //right diagonal
+        r = row-1;
+        c = col + 1;
+        while(r>=0 && c<n){
+            if(board[r][c] == 'Q') return false;
+            r--;
+            c++;
         }
 
-        return false;
+        return true;
     }
-
 }
