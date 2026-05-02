@@ -1,50 +1,67 @@
 class Solution {
     public void solveSudoku(char[][] board) {
-        solve(board, 0, 0, new boolean[1]);
+        boolean x = solve(0, 0, board);
     }
 
-    void solve(char[][] board, int r, int c, boolean[] found){
-        if(r == 9){
-            found[0] = true;
-            return;
+    boolean solve(int row, int col, char[][] board) {
+        if (row == 9) {
+            return true;
         }
 
-        if(board[r][c] != '.'){
-            if(c<8) solve(board, r, c+1, found);
-            else solve(board, r+1, 0, found);
-            return;
+        boolean solved;
+
+        if (board[row][col] != '.') {
+            if (col == 8)
+                solved = solve(row + 1, 0, board);
+            else
+                solved = solve(row, col + 1, board);
+
+            if (solved)
+                return true;
+            return false;
         }
 
-        for(char i = '1'; i <='9'; i++){
-            if(valid(board, r, c, i)){
-                board[r][c] = i;
+        for (char i = '1'; i <= '9'; i++) {
+            if (valid(row, col, i, board)) {
+                board[row][col] = i;
 
-                if(c < 8) solve(board, r, c+1, found);
-                else solve(board, r+1, 0, found);
+                if (col == 8)
+                    solved = solve(row + 1, 0, board);
+                else
+                    solved = solve(row, col + 1, board);
 
-                if(found[0]) return;
-                board[r][c] = '.';
+                if (solved)
+                    return true;
+
+                board[row][col] = '.';
             }
         }
+
+        return false;
     }
 
-    boolean valid(char[][] board, int r, int c, char val){
-        int i = 0;
-        for(; i<9; i++){
-            if(board[i][c] == val || board[r][i] == val) return false;
+    boolean valid(int row, int col, char n, char[][] board) {
+        for (int i = 0; i < 9; i++) {
+            if (board[i][col] == n || board[row][i] == n)
+                return false;
         }
-        
-        i = r - r%3;
-        int j = c - c%3;
 
-        for(int x = 0; x<3; x++){
-            j = c - c%3;
-            for(int y = 0; y<3; y++){
-                if(i == r && j == c) continue;
-                if(board[i][j] == val) return false;
-                j++;
+        int r = 3 * (row / 3);
+        int c = 3 * (col / 3);
+        for (int i = 0; i < 9; i++) {
+            if (r == row && c == col) {
+                c++;
+                continue;
             }
-            i++;
+
+            if (i > 0 && i % 3 == 0) {
+                r++;
+                c = 3 * (col / 3);
+            }
+
+            if (board[r][c] == n)
+                return false;
+            c++;
         }
 
         return true;
