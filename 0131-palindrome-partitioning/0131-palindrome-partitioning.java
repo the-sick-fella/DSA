@@ -14,10 +14,9 @@ class Solution {
 
         for(int i = 1; i<=s.length(); i++){
             if(idx+i > s.length()) return;
-            String sub = s.substring(idx, idx+i);
 
-            if(palindrome(sub)){
-                curr.add(sub);
+            if(palindrome(s, idx, idx + i - 1)){
+                curr.add(s.substring(idx, idx+i));
 
                 p(s, idx + i, list, curr);
 
@@ -26,9 +25,11 @@ class Solution {
         }
     }
 
-    boolean palindrome (String s){
-        for(int i = 0; i<s.length()/2; i++){
-            if(s.charAt(i) != s.charAt(s.length() -1 -i)) return false;
+    boolean palindrome (String s, int si, int ei){
+        while(si<ei){
+            if(s.charAt(si) != s.charAt(ei)) return false;
+            si++;
+            ei--;
         }
 
         return true;
