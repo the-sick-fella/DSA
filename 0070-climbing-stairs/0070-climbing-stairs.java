@@ -1,14 +1,13 @@
 class Solution {
     public int climbStairs(int n) {
-        int dp [] = new int[n];
-        Arrays.fill(dp, -1);
+        Integer dp [] = new Integer[n];
         return f(n, 0, dp);
     }
 
-    int f(int n, int idx, int [] dp){
+    int f(int n, int idx, Integer [] dp){
         if(idx == n) return 1;
 
-        if(dp[idx] != -1) return dp[idx];
+        if(dp[idx] != null) return dp[idx];
 
         int left = 0, right = 0;
 
