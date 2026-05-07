@@ -1,14 +1,16 @@
 class Solution {
     public int fib(int n) {
-        Integer dp [] = new Integer[n+1];
-        return f(n, dp);
-    }
+        if(n < 2) return n;
 
-    int f(int n, Integer [] dp){
-        if(n<2) return n;
+        int [] dp = new int [n+1];
 
-        if(dp[n] != null) return dp[n];
+        dp[0] = 0;
+        dp[1] = 1;
 
-        return dp[n] = f(n-1, dp) + f(n-2, dp);
+        for(int i = 2; i<=n; i++){
+            dp[i] = dp[i-1] + dp[i-2];
+        }
+
+        return dp[n];
     }
 }
