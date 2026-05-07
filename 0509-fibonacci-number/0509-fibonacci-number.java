@@ -10,7 +10,6 @@ class Solution {
 
         if(dp[n] != -1) return dp[n];
 
-        dp[n] = f(n-1, dp) + f(n-2, dp);
-        return dp[n];
+        return dp[n] = f(n-1, dp) + f(n-2, dp);
     }
 }
