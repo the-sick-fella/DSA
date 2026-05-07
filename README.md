@@ -40,14 +40,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0131-palindrome-partitioning](https://github.com/the-sick-fella/DSA/tree/master/0131-palindrome-partitioning) |
+| [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 ## Math
 |  |
 | ------- |
 | [0060-permutation-sequence](https://github.com/the-sick-fella/DSA/tree/master/0060-permutation-sequence) |
+| [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 ## Recursion
 |  |
 | ------- |
 | [0060-permutation-sequence](https://github.com/the-sick-fella/DSA/tree/master/0060-permutation-sequence) |
+| [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -81,4 +84,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/the-sick-fella/DSA/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/the-sick-fella/DSA/tree/master/0090-subsets-ii) |
+## Memoization
+|  |
+| ------- |
+| [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 <!---LeetCode Topics End-->
