@@ -1,19 +1,15 @@
 class Solution {
     public int climbStairs(int n) {
-        Integer dp [] = new Integer[n];
-        return f(n, 0, dp);
-    }
+        if(n<2) return 1;
+        
+        int dp [] = new int [n];
+        dp[0] = 1;
+        dp[1] = 2;
 
-    int f(int n, int idx, Integer [] dp){
-        if(idx == n) return 1;
+        for(int i = 2; i<n; i++){
+            dp[i] = dp[i-1] + dp[i-2];
+        }
 
-        if(dp[idx] != null) return dp[idx];
-
-        int left = 0, right = 0;
-
-        if(idx < n) left = f(n, idx+1, dp);
-        if(idx < n-1) right = f(n, idx+2, dp);
-
-        return dp[idx] = left + right;
+        return dp[n-1];
     }
 }
