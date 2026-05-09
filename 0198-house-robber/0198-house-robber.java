@@ -1,17 +1,17 @@
 class Solution {
     public int rob(int[] nums) {
-        int dp [] = new int[nums.length];
-        dp[0] = nums[0];
-        
-        for(int i = 1; i<nums.length; i++){
-            int one = dp[i-1];
-            int two;
-            if(i == 1) two = nums[i];
-            else two = dp[i-2] + nums[i];
+        if(nums.length == 1) return nums[0];
 
-            dp[i] = Math.max(one, two);
+        int p2 = nums[0];
+        int p1 = Math.max(nums[0], nums[1]);
+        
+        for(int i = 2; i<nums.length; i++){
+            int curr = Math.max(p2 + nums[i], p1);
+
+            p2 = p1;
+            p1 = curr;
         }
 
-        return dp[nums.length-1];
+        return p1;
     }
 }
