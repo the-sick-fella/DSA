@@ -1,9 +1,8 @@
 class Solution {
     public int rob(int[] nums) {
         int res = 0;
-        int dp [] = new int[nums.length];
-        Arrays.fill(dp, -1);
-        
+        Integer dp [] = new Integer[nums.length];
+
         for(int i = 0; i<nums.length; i++){
             res = Math.max(res, getMax(nums, i, dp));
         }
@@ -11,10 +10,10 @@ class Solution {
         return res;
     }
 
-    int getMax(int [] nums, int idx, int dp[]){
+    int getMax(int [] nums, int idx, Integer dp[]){
         if(idx >= nums.length) return 0;
 
-        if(dp[idx] != -1) return dp[idx];
+        if(dp[idx] != null) return dp[idx];
 
         int val = 0;
         for(int i = idx + 2; i<nums.length; i++){
