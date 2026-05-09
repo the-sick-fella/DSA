@@ -1,13 +1,13 @@
 class Solution {
     public int rob(int[] nums) {
-        if(nums.length == 1) return nums[0];
         int dp [] = new int[nums.length];
         dp[0] = nums[0];
-        dp[1] = Math.max(nums[1], nums[0]);
         
-        for(int i = 2; i<nums.length; i++){
+        for(int i = 1; i<nums.length; i++){
             int one = dp[i-1];
-            int two = dp[i-2] + nums[i];
+            int two;
+            if(i == 1) two = nums[i];
+            else two = dp[i-2] + nums[i];
 
             dp[i] = Math.max(one, two);
         }
