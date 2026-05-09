@@ -1,26 +1,17 @@
 class Solution {
     public int rob(int[] nums) {
-        int res = 0;
-        Integer dp [] = new Integer[nums.length];
+        int dp [] = new int[nums.length];
+        dp[0] = nums[0];
+        
+        for(int i = 1; i<nums.length; i++){
+            int one = dp[i-1];
+            int two;
+            if(i>1) two = dp[i-2] + nums[i];
+            else two = nums[i];
 
-        for(int i = 0; i<nums.length; i++){
-            res = Math.max(res, getMax(nums, i, dp));
+            dp[i] = Math.max(one, two);
         }
 
-        return res;
-    }
-
-    int getMax(int [] nums, int idx, Integer dp[]){
-        if(idx >= nums.length) return 0;
-
-        if(dp[idx] != null) return dp[idx];
-
-        int val = 0;
-        for(int i = idx + 2; i<nums.length; i++){
-            int curr = getMax(nums, i, dp);
-            val = Math.max(val, curr);
-        }
-
-        return dp[idx] = val + nums[idx];
+        return dp[nums.length-1];
     }
 }
