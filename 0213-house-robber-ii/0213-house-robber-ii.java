@@ -20,10 +20,10 @@ class Solution {
         if (nums.length == 1)
             return nums[0];
 
-        int p2 = nums[0];
-        int p1 = Math.max(nums[0], nums[1]);
+        int p2 = 0;
+        int p1 = nums[0];
 
-        for (int i = 2; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {
             int pick = nums[i] + p2;
             int skip = p1;
 
