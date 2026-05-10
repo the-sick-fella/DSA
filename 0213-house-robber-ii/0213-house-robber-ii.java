@@ -4,14 +4,11 @@ class Solution {
         int dp[] = new int[nums.length];
         int res = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            Arrays.fill(dp, -1);
-            if (i == 0)
-                res = Math.max(res, getMax(nums, 0, dp, nums.length - 1));
-            else
-                res = Math.max(res, getMax(nums, i, dp, nums.length));
-        }
-
+        Arrays.fill(dp, -1);
+        res = Math.max(res, getMax(nums, 0, dp, nums.length - 1));
+        Arrays.fill(dp, -1);
+        res = Math.max(res, getMax(nums, 1, dp, nums.length));
+        
         return res;
     }
 
