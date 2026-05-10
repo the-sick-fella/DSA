@@ -1,27 +1,33 @@
 class Solution {
     public int rob(int[] nums) {
-        if(nums.length == 1) return nums[0];
+        if (nums.length == 1) return nums[0];
+
+        if(nums.length == 2)return Math.max(nums[0], nums[1]);
+
         int dp[] = new int[nums.length];
-        int res = 0;
+        dp[0] = nums[0];
+        dp[1] = Math.max(nums[0], nums[1]);
 
-        Arrays.fill(dp, -1);
-        res = Math.max(res, getMax(nums, 0, dp, nums.length - 1));
-        Arrays.fill(dp, -1);
-        res = Math.max(res, getMax(nums, 1, dp, nums.length));
-        
-        return res;
-    }
+        for (int i = 2; i < nums.length-1; i++) {
+            int pick = nums[i] + dp[i-2];
+            int skip = dp[i-1];
 
-    int getMax(int[] nums, int idx, int[] dp, int n) {
-        if (idx >= n)
-            return 0;
+            dp[i] = Math.max(pick, skip);
+        }
 
-        if (dp[idx] != -1)
-            return dp[idx];
+        int res = dp[dp.length-2];
 
-        int pick = nums[idx] + getMax(nums, idx + 2, dp, n);
-        int skip = getMax(nums, idx + 1, dp, n);
+        dp = new int[nums.length];
+        dp[1] = nums[1];
+        dp[2] = Math.max(nums[1], nums[2]);
 
-        return dp[idx] = Math.max(pick, skip);
+        for (int i = 3; i < nums.length; i++) {
+            int pick = nums[i] + dp[i-2];
+            int skip = dp[i-1];
+
+            dp[i] = Math.max(pick, skip);
+        }
+
+        return Math.max(res, dp[dp.length-1]);
     }
 }
