@@ -54,11 +54,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0060-permutation-sequence](https://github.com/the-sick-fella/DSA/tree/master/0060-permutation-sequence) |
 | [0070-climbing-stairs](https://github.com/the-sick-fella/DSA/tree/master/0070-climbing-stairs) |
+| [0231-power-of-two](https://github.com/the-sick-fella/DSA/tree/master/0231-power-of-two) |
 | [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 ## Recursion
 |  |
 | ------- |
 | [0060-permutation-sequence](https://github.com/the-sick-fella/DSA/tree/master/0060-permutation-sequence) |
+| [0231-power-of-two](https://github.com/the-sick-fella/DSA/tree/master/0231-power-of-two) |
 | [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 ## Divide and Conquer
 |  |
@@ -93,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/the-sick-fella/DSA/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/the-sick-fella/DSA/tree/master/0090-subsets-ii) |
+| [0231-power-of-two](https://github.com/the-sick-fella/DSA/tree/master/0231-power-of-two) |
 ## Memoization
 |  |
 | ------- |
