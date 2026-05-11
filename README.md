@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/the-sick-fella/DSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/the-sick-fella/DSA/tree/master/0213-house-robber-ii) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
+| [2553-separate-the-digits-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/2553-separate-the-digits-in-an-array) |
 ## Hash Table
 |  |
 | ------- |
@@ -97,4 +98,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/the-sick-fella/DSA/tree/master/0070-climbing-stairs) |
 | [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
+## Simulation
+|  |
+| ------- |
+| [2553-separate-the-digits-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/2553-separate-the-digits-in-an-array) |
 <!---LeetCode Topics End-->
