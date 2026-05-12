@@ -2,12 +2,6 @@ class Solution {
     public int minimumEffort(int[][] tasks) {
         Arrays.sort(tasks, (a,b) -> b[1] - b[0] - (a[1] - a[0]));
 
-        for(int row[] : tasks){
-            for(int col : row)
-            System.out.print(col + " ");
-            System.out.println();
-        }
-
         int curr = tasks[0][1];
         int ans = curr;
 
