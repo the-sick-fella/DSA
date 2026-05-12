@@ -5,9 +5,9 @@ class Solution {
         int curr = tasks[0][1];
         int ans = curr;
 
-        for(int i = 0; i<tasks.length; i++){
-            int req = tasks[i][1];
-            int used = tasks[i][0];
+        for(int task[] : tasks){
+            int req = task[1];
+            int used = task[0];
 
             if(req > curr){
                 ans += (req - curr);
