@@ -2,19 +2,16 @@ class Solution {
     public int minimumEffort(int[][] tasks) {
         Arrays.sort(tasks, (a,b) -> b[1] - b[0] - (a[1] - a[0]));
 
-        int curr = tasks[0][1];
-        int ans = curr;
+        int curr = 0;
+        int ans = 0;
 
         for(int task[] : tasks){
-            int req = task[1];
-            int used = task[0];
-
-            if(req > curr){
-                ans += (req - curr);
-                curr += (req - curr);
+            if(task[1] > curr){
+                ans += (task[1] - curr);
+                curr = task[1];
             }
 
-            curr -= used;
+            curr -= task[0];
         }
 
         return ans;
