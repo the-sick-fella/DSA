@@ -1,20 +1,21 @@
 class Solution {
     public int uniquePaths(int m, int n) {
-        int [][] dp = new int[m][n];
-        for(int [] row : dp) Arrays.fill(row, -1);
-        return recursion(m, n, 0, 0, dp);
-    }
-
-    int recursion(int m, int n, int r, int c, int [][] dp){
-        if(r >= m || c >= n) return 0;
+        int [][] dp = new int[m+1][n+1];
         
-        if(r == m-1 && c == n-1) return 1;
+        for(int r = m-1; r>=0; r--){
+            for(int c = n-1; c>=0; c--){
+                if(r == m-1 && c == n-1){
+                    dp[r][c] = 1;
+                    continue;
+                }
 
-        if(dp[r][c] != -1) return dp[r][c];
+                int down = dp[r+1][c];
+                int right = dp[r][c+1];
 
-        int down = recursion(m, n, r+1, c, dp);
-        int right = recursion(m, n, r, c+1, dp);
+                dp[r][c] = down + right;
+            }
+        }
 
-        return dp[r][c] = right + down;
+        return dp[0][0];
     }
 }
