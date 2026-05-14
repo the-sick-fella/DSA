@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/the-sick-fella/DSA/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/the-sick-fella/DSA/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/the-sick-fella/DSA/tree/master/0051-n-queens) |
+| [0063-unique-paths-ii](https://github.com/the-sick-fella/DSA/tree/master/0063-unique-paths-ii) |
 | [0078-subsets](https://github.com/the-sick-fella/DSA/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/the-sick-fella/DSA/tree/master/0090-subsets-ii) |
 | [0198-house-robber](https://github.com/the-sick-fella/DSA/tree/master/0198-house-robber) |
@@ -38,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0036-valid-sudoku](https://github.com/the-sick-fella/DSA/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/the-sick-fella/DSA/tree/master/0037-sudoku-solver) |
+| [0063-unique-paths-ii](https://github.com/the-sick-fella/DSA/tree/master/0063-unique-paths-ii) |
 ## String
 |  |
 | ------- |
@@ -46,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/the-sick-fella/DSA/tree/master/0062-unique-paths) |
+| [0063-unique-paths-ii](https://github.com/the-sick-fella/DSA/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/the-sick-fella/DSA/tree/master/0070-climbing-stairs) |
 | [0131-palindrome-partitioning](https://github.com/the-sick-fella/DSA/tree/master/0131-palindrome-partitioning) |
 | [0198-house-robber](https://github.com/the-sick-fella/DSA/tree/master/0198-house-robber) |
