@@ -5,13 +5,11 @@ class Solution {
 
         for(int r = m-2; r >= 0; r--){
             int curr [] = new int[n];
-            for(int c = n-1; c>=0; c--){
-                int down = dp[c];
-                
+            for(int c = n-1; c>=0; c--){            
                 int right = 0;
                 if(c < n-1) right = curr[c+1];
 
-                curr[c] = down + right;
+                curr[c] = dp[c] + right;
             }
 
             dp = curr;
