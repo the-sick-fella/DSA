@@ -21,10 +21,10 @@ class Solution {
                 }
 
                 int down = 0;
-                if(r < grid.length-1 && grid[r+1][c] != 1) down = dp[c];
+                if(r < m-1 && grid[r+1][c] != 1) down = dp[c];
 
                 int right = 0;
-                if(c < grid[0].length-1 && grid[r][c+1] != 1) right = curr[c+1];
+                if(c < n-1 && grid[r][c+1] != 1) right = curr[c+1];
 
                 curr[c] = right + down;
             }
