@@ -13,7 +13,6 @@ class Solution {
                     continue;
                 }
 
-                int right = 0;
                 if (c < n - 1 && grid[r][c + 1] != 1)
                     dp[c] += dp[c + 1];
             }
