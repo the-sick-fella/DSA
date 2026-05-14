@@ -10,10 +10,9 @@ class Solution {
             for (int c = n - 1; c >= 0; c--) {
                 if (grid[r][c] == 1) {
                     dp[c] = 0;
-                    continue;
                 }
 
-                if (c < n - 1 && grid[r][c + 1] != 1)
+                else if (c < n - 1 && grid[r][c + 1] != 1)
                     dp[c] += dp[c + 1];
             }
         }
