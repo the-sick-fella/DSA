@@ -3,12 +3,17 @@ class Solution {
         int m = grid.length;
         int n = grid[0].length;
         int dp [][] = new int[m][n];
-        dp[m-1][n-1] = grid[m-1][n-1] == 0 ? 1 : 0;
 
-        for(int r = m-1; r>=0; r--){
+        int prev = 0;
+        for(int c = n-1; c>=0; c--){
+            if(c < n-1 && dp[m-1][c+1] == 0) prev = 1;
+            if(prev != 1 && grid[m-1][c] != 1){
+                dp[m-1][c] = 1;
+            }
+        }
+
+        for(int r = m-2; r>=0; r--){
             for(int c = n-1; c>=0; c--){
-                if(r == m-1 && c == n-1) continue;
-
                 if(grid[r][c] == 1){
                     dp[r][c] = 0;
                     continue;
