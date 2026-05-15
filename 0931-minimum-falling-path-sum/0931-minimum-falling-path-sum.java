@@ -3,10 +3,10 @@ class Solution {
         int n = matrix.length;
 
         int[][] dp = new int[n][n];
-        int res = 100000;
         for (int[] row : dp)
             Arrays.fill(row, 100000);
 
+        int res = 100000;
         for (int i = 0; i < n; i++) {
             res = Math.min(res, f(matrix, n, 0, i, dp));
         }
