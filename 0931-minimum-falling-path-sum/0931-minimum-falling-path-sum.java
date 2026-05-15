@@ -2,32 +2,30 @@ class Solution {
     public int minFallingPathSum(int[][] matrix) {
         int n = matrix.length;
 
-        int[][] dp = new int[n][n];
-        for (int[] row : dp)
-            Arrays.fill(row, 100000);
+        int[] dp = new int[n];
+        for (int i = 0; i < n; i++)
+            dp[i] = matrix[n - 1][i];
 
-        int res = 100000;
-        for (int i = 0; i < n; i++) {
-            res = Math.min(res, f(matrix, n, 0, i, dp));
+        for (int i = n - 2; i >= 0; i--) {
+            int [] curr = new int[n];
+            for (int j = n - 1; j >= 0; j--) {
+                curr[j] = dp[j];
+
+                if (j > 0)
+                    curr[j] = Math.min(curr[j], dp[j - 1]);
+                if (j < n - 1)
+                    curr[j] = Math.min(curr[j], dp[j + 1]);
+
+                curr[j] += matrix[i][j];
+            }
+
+            dp = curr;
         }
 
+        int res = 100000;
+        for (int num : dp)
+            res = Math.min(res, num);
+
         return res;
-    }
-
-    int f(int[][] grid, int n, int r, int c, int[][] dp) {
-        if (r < 0 || r >= n || c < 0 || c >= n)
-            return 100000;
-
-        if (dp[r][c] != 100000)
-            return dp[r][c];
-
-        int ans = 100000;
-        ans = Math.min(ans, f(grid, n, r + 1, c - 1, dp));
-        ans = Math.min(ans, f(grid, n, r + 1, c, dp));
-        ans = Math.min(ans, f(grid, n, r + 1, c + 1, dp));
-
-        if (ans == 100000)
-            return dp[r][c] = grid[r][c];
-        return dp[r][c] = ans + grid[r][c];
     }
 }
