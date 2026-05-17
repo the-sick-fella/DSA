@@ -4,30 +4,48 @@ class Solution {
         int n = grid[0].length;
 
         int dp[][][] = new int[m][n][n];
-        for (int row[][] : dp) {
-            for (int col[] : row) {
-                Arrays.fill(col, -1);
+        for (int[][] mat : dp) {
+            for (int[] row : mat) {
+                Arrays.fill(row, (int)-1e9);
             }
         }
-        return f(grid, m, n, 0, 0, n - 1, dp);
-    }
+        dp[0][0][n - 1] = grid[0][0] + grid[0][n - 1];
 
-    int f(int[][] grid, int m, int n, int r, int c1, int c2, int[][][] dp) {
-        if (r >= m || c1 < 0 || c1 >= n || c2 < 0 || c2 >= n) return 0;
+        for (int r = 1; r < m; r++) {
+            for (int c1 = 0; c1 < n; c1++) {
+                for (int c2 = 0; c2 < n; c2++) {
+                    int res = (int)-1e9;
+                    
+                    for (int i = -1; i <= 1; i++) {
+                        if (c1 + i < 0 || c1 + i >= n)
+                            continue;
 
-        if (dp[r][c1][c2] != -1) return dp[r][c1][c2];
+                        for (int j = -1; j <= 1; j++) {
+                            if (c2 + j < 0 || c2 + j >= n)
+                                continue;
 
-        int res = 0;
-        for (int i = -1; i <= 1; i++) {
-            for (int j = -1; j <= 1; j++) {
-                res = Math.max(res, f(grid, m, n, r + 1, c1 + i, c2 + j, dp));
+                            res = Math.max(res, dp[r - 1][c1 + i][c2 + j]);
+                        }
+                    }
+
+                    res += grid[r][c1];
+
+                    if (c1 == c2) {
+                        dp[r][c1][c2] = res;
+                        continue;
+                    }
+
+                    dp[r][c1][c2] = res + grid[r][c2];
+                }
             }
         }
 
-        res += grid[r][c1];
-
-        if (c1 == c2) return dp[r][c1][c2] = res;
-
-        return dp[r][c1][c2] = res + grid[r][c2];
+        int ans = 0;
+        for (int c1[] : dp[m - 1]) {
+            for (int c2 : c1) {
+                ans = Math.max(ans, c2);
+            }
+        }
+        return ans;
     }
 }
