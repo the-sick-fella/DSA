@@ -16,6 +16,7 @@ class Solution {
             for(int i = s.length(); i>0; i--){
                 if(set.contains(s.substring(0, i))){
                     ans = Math.max(ans, i);
+                    break;
                 }
             }
         }
