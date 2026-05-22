@@ -4,7 +4,6 @@ class Solution {
         int ei = nums.length - 1;
 
         while (si < ei) {
-
             int mid = si + (ei - si) / 2;
 
             if (nums[mid] > nums[ei]) {
@@ -13,6 +12,7 @@ class Solution {
                 ei = mid;
             }
         }
+        
         int idx = si;
 
         int ans = bs(nums, 0, idx-1, target);
