@@ -1,22 +1,23 @@
 class Solution {
     public int search(int[] nums, int target) {
+        int n = nums.length - 1;
         int si = 0;
-        int ei = nums.length - 1;
+        int ei = n;
+        int idx = -1;
 
-        while (si < ei) {
-            int mid = si + (ei - si) / 2;
-
-            if (nums[mid] > nums[ei]) {
-                si = mid + 1;
-            } else {
-                ei = mid;
+        while(si<ei){
+            int mid = (si+ei)/2;
+            if(nums[mid] > nums[mid+1]){
+                idx = mid;
+                break;
             }
-        }
-        
-        int idx = si;
 
-        int ans = bs(nums, 0, idx-1, target);
-        if(ans == -1) ans = bs(nums, idx, nums.length-1, target);
+            if(nums[mid] > nums[ei]) si = mid+1;
+            else ei = mid;
+        }
+
+        int ans = bs(nums, 0, idx, target);
+        if(ans == -1) ans = bs(nums, idx+1, n, target);
 
         return ans;
     }
