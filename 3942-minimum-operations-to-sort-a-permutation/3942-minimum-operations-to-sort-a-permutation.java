@@ -15,7 +15,6 @@ class Solution {
             int idx1 = -1;
             for(int j = 0; j<n; j++){
                 if(nums[j] == 0){
-                    // ans = Math.min(ans, j);
                     idx1 = j;
                     break;
                 }
