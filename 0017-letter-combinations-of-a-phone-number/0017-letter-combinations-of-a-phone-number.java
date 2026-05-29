@@ -3,13 +3,9 @@ class Solution {
         char[][] mat = new char[8][4];
         char c = 'a';
         for (int i = 0; i < mat.length; i++) {
-            for (int j = 0; j < 3; j++) {
-                mat[i][j] = c++;
-            }
-
-            if (i == 5 || i == 7) {
-                mat[i][3] = c++;
-            }
+            for (int j = 0; j < 3; j++) mat[i][j] = c++;
+            
+            if (i == 5 || i == 7) mat[i][3] = c++;
         }
 
         List<String> list = new ArrayList<>();
