@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/the-sick-fella/DSA/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0131-palindrome-partitioning](https://github.com/the-sick-fella/DSA/tree/master/0131-palindrome-partitioning) |
+| [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/the-sick-fella/DSA/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/the-sick-fella/DSA/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/the-sick-fella/DSA/tree/master/3121-count-the-number-of-special-characters-ii) |
@@ -145,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
 | [2553-separate-the-digits-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/2553-separate-the-digits-in-an-array) |
 ## Greedy
 |  |
@@ -158,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
 | [2540-minimum-common-value](https://github.com/the-sick-fella/DSA/tree/master/2540-minimum-common-value) |
 ## Binary Search
 |  |
@@ -168,4 +171,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/the-sick-fella/DSA/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
+## Stack
+|  |
+| ------- |
+| [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
 <!---LeetCode Topics End-->
