@@ -4,7 +4,6 @@ class Solution {
 
         for (int i = 0; i < landStartTime.length; i++) {
             int one = landStartTime[i] + landDuration[i];
-            // System.out.println("sum: " + sum);
             for (int j = 0; j < waterStartTime.length; j++) {
                 int two;
                 if (waterStartTime[j] > one)
@@ -13,7 +12,6 @@ class Solution {
                     two = one + waterDuration[j];
                 ans = Math.min(ans, two);
             }
-            // System.out.println(ans);
         }
 
         for (int i = 0; i < waterStartTime.length; i++) {
