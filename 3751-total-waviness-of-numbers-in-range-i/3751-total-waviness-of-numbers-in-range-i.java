@@ -6,7 +6,10 @@ class Solution {
 
             String s = String.valueOf(num1);
             for(int i = 1; i<s.length()-1; i++){
-                if((s.charAt(i) > s.charAt(i-1) && s.charAt(i) > s.charAt(i+1)) || (s.charAt(i) < s.charAt(i-1) && s.charAt(i) < s.charAt(i+1))) count++;
+                char curr = s.charAt(i);
+                char prev = s.charAt(i-1);
+                char next = s.charAt(i+1);
+                if((curr > prev && curr > next) || (curr < prev && curr < next)) count++;
             }
         }
         return count;
