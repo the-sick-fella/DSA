@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 | [0931-minimum-falling-path-sum](https://github.com/the-sick-fella/DSA/tree/master/0931-minimum-falling-path-sum) |
 | [1463-cherry-pickup-ii](https://github.com/the-sick-fella/DSA/tree/master/1463-cherry-pickup-ii) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/the-sick-fella/DSA/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Math
 |  |
 | ------- |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0326-power-of-three](https://github.com/the-sick-fella/DSA/tree/master/0326-power-of-three) |
 | [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/the-sick-fella/DSA/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/the-sick-fella/DSA/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Recursion
 |  |
 | ------- |
@@ -180,4 +182,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
+## Enumeration
+|  |
+| ------- |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/the-sick-fella/DSA/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 <!---LeetCode Topics End-->
