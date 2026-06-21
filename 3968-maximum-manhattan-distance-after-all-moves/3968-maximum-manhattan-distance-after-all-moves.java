@@ -18,19 +18,8 @@ class Solution {
             }
         }
 
-        // int max = 0;
-        // char maxChar = ' ';
-
-        // for(char c : map.keySet()){
-        //     if(Math.abs(map.get(c)) >= max){
-        //         maxChar = c;
-        //         max = Math.abs(map.get(c));
-        //     }
-        // }
-
 
         int x = 0, y = 0;
-        // map.put(maxChar, max+=blank);
 
         for(char c : map.keySet()){
             switch(c){
