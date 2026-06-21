@@ -13,8 +13,8 @@ class Solution {
         if(nums[0] <= target) dp[0][nums[0]] = true;
         
         for(int i = 1; i<n; i++){
-            for(int curr = target; curr>=0; curr--){
-                if((curr >= nums[i] && dp[i-1][curr-nums[i]]) || dp[i-1][curr]) dp[i][curr] = true;
+            for(int curr = 0; curr<=target; curr++){
+                if(dp[i-1][curr] || (curr - nums[i] >= 0 && dp[i-1][curr-nums[i]])) dp[i][curr] = true;
             }
         }
 
