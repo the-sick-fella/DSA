@@ -8,6 +8,8 @@ class Solution {
 
         int target = sum/2;
         boolean [][] dp = new boolean[n][target+1];
+
+        dp[0][0] = true;
         if(nums[0] <= target) dp[0][nums[0]] = true;
         
         for(int i = 1; i<n; i++){
