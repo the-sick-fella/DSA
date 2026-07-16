@@ -1,21 +1,24 @@
 class Solution {
     static int perfectSum(int[] arr, int target) {
-        int dp [] = new int [target+1];
-        dp[0]++;
-        if(arr[0] <= target) dp[arr[0]]++;
+        int dp [][] = new int [arr.length][target+1];
+        for(int r[] : dp) Arrays.fill(r, -1);
         
-        for(int idx = 1; idx < arr.length; idx++){
-            int temp [] = new int [target+1];
-            for(int sum = 0; sum <= target; sum++){
-                int skip = dp[sum];
-                int pick = 0;
-                if(sum >= arr[idx]) pick = dp[sum-arr[idx]];
-                
-                temp[sum] = skip + pick;
-            }
-            dp = temp;
+        return f(arr, 0, target, 0, dp);
+    }
+    
+    static int f(int [] nums, int idx, int target, int sum, int dp [][]){
+        if(sum > target) return 0;
+        
+        if(idx == nums.length){
+            if(sum == target) return 1;
+            return 0;
         }
         
-        return dp[target];
+        if(dp[idx][sum] != -1) return dp[idx][sum];
+        
+        int pick = f(nums, idx+1, target, sum+nums[idx], dp);
+        int skip = f(nums, idx+1, target, sum, dp);
+        
+        return dp[idx][sum] = pick + skip;
     }
 }
