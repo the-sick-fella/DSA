@@ -9,23 +9,20 @@ class Solution {
 		target /= 2;
 		
 		int dp [][] = new int[arr.length][target + 1];
-		for (int r[] : dp) Arrays.fill(r, -1);
+
+		dp[0][0]++;
+		if (arr[0] <= target) dp[0][arr[0]]++;
 		
-		return f(arr, 0, 0, target, dp);
-	}
-	
-	static int f(int [] nums, int idx, int curr, int target, int [][] dp) {
-		if (curr > target) return 0;
-		if (idx == nums.length) {
-			if (curr == target) return 1;
-			return 0;
+		for (int idx = 1; idx<arr.length; idx++) {
+			for (int curr = 0; curr <= target; curr++) {
+				int skip = dp[idx - 1][curr];
+				int pick = 0;
+				if (arr[idx] <= curr) pick = dp[idx - 1][curr - arr[idx]];
+				
+				dp[idx][curr] = skip + pick;
+			}
 		}
 		
-		if (dp[idx][curr] != -1) return dp[idx][curr];
-		
-		int pick = f(nums, idx + 1, curr + nums[idx], target, dp);
-		int skip = f(nums, idx + 1, curr, target, dp);
-		
-		return dp[idx][curr] = skip + pick;
+		return dp[arr.length-1][target];
 	}
 }
