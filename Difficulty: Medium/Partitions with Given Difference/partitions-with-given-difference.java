@@ -8,7 +8,7 @@ class Solution {
 		if (target < 0 || target%2 != 0) return 0;
 		target /= 2;
 		
-		int dp [][] = new int[arr.length + 1][target + 1];
+		int dp [][] = new int[arr.length][target + 1];
 		for (int r[] : dp) Arrays.fill(r, -1);
 		
 		return f(arr, 0, 0, target, dp);
