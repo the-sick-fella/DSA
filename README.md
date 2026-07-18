@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/the-sick-fella/DSA/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/the-sick-fella/DSA/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2540-minimum-common-value](https://github.com/the-sick-fella/DSA/tree/master/2540-minimum-common-value) |
 | [2553-separate-the-digits-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/2553-separate-the-digits-in-an-array) |
 | [2574-left-and-right-sum-differences](https://github.com/the-sick-fella/DSA/tree/master/2574-left-and-right-sum-differences) |
@@ -134,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1331-rank-transform-of-an-array](https://github.com/the-sick-fella/DSA/tree/master/1331-rank-transform-of-an-array) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 ## Heap (Priority Queue)
 |  |
@@ -182,6 +184,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 ## Combinatorics
 |  |
@@ -192,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
+| [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2540-minimum-common-value](https://github.com/the-sick-fella/DSA/tree/master/2540-minimum-common-value) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 ## Binary Search
