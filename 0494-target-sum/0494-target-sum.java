@@ -5,18 +5,20 @@ class Solution {
 
         if (target > sum || target < 0 - sum) return 0;
 
-        int[][] dp = new int[nums.length][2 * sum + 1];
-        dp[0][sum + nums[0]]++;
-        dp[0][sum - nums[0]]++;
+        int[] dp = new int[2 * sum + 1];
+        dp[sum + nums[0]]++;
+        dp[sum - nums[0]]++;
 
         for (int idx = 1; idx < nums.length; idx++) {
+            int temp[] = new int[2 * sum + 1];
             for (int curr = 0 - sum; curr <= sum; curr++) {
                 int add = 0, sub = 0;
-                if (sum + curr - nums[idx] >= 0)  add = dp[idx - 1][sum + curr - nums[idx]];
-                if (curr + nums[idx] <= sum) sub = dp[idx - 1][sum + curr + nums[idx]];
-                dp[idx][sum + curr] = add + sub;
+                if (sum + curr - nums[idx] >= 0)  add = dp[sum + curr - nums[idx]];
+                if (curr + nums[idx] <= sum) sub = dp[sum + curr + nums[idx]];
+                temp[sum + curr] = add + sub;
             }
+            dp = temp;
         }
-        return dp[nums.length - 1][sum + target];
+        return dp[sum + target];
     }
 }
