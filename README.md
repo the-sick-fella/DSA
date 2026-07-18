@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/the-sick-fella/DSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/the-sick-fella/DSA/tree/master/0213-house-robber-ii) |
 | [0416-partition-equal-subset-sum](https://github.com/the-sick-fella/DSA/tree/master/0416-partition-equal-subset-sum) |
+| [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [0931-minimum-falling-path-sum](https://github.com/the-sick-fella/DSA/tree/master/0931-minimum-falling-path-sum) |
 | [1331-rank-transform-of-an-array](https://github.com/the-sick-fella/DSA/tree/master/1331-rank-transform-of-an-array) |
@@ -128,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0047-permutations-ii](https://github.com/the-sick-fella/DSA/tree/master/0047-permutations-ii) |
+| [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [1331-rank-transform-of-an-array](https://github.com/the-sick-fella/DSA/tree/master/1331-rank-transform-of-an-array) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
@@ -177,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
@@ -187,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
 | [2540-minimum-common-value](https://github.com/the-sick-fella/DSA/tree/master/2540-minimum-common-value) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
