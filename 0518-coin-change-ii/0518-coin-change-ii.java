@@ -4,11 +4,11 @@ class Solution {
         int [] dp = new int [amount+1];
         dp[0] = 1;
 
-        for(int idx = 0; idx<n; idx++){
+        for(int coin : coins){
             for(int sum = 0; sum<=amount; sum++){
                 int skip = dp[sum];
                 int pick = 0;
-                if(sum >= coins[idx]) pick = dp[sum - coins[idx]];
+                if(sum >= coin) pick = dp[sum - coin];
                 dp[sum] = skip + pick;
             }
         }
