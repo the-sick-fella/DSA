@@ -8,7 +8,7 @@ class Solution {
             for(int sum = coin; sum<=amount; sum++){
                 int skip = dp[sum];
                 int pick = 0;
-                if(sum >= coin) pick = dp[sum - coin];
+                pick = dp[sum - coin];
                 dp[sum] = skip + pick;
             }
         }
