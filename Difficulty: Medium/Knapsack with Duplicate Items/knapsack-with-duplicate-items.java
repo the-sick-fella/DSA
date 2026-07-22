@@ -1,21 +1,23 @@
 class Solution {
 	public int knapSack(int val[], int wt[], int capacity) {
 		// code here
-		int dp [][] = new int[wt.length][capacity + 1];
+		int dp [] = new int[capacity + 1];
 		for (int sum = 0; sum <= capacity; sum++) {
-				dp[0][sum] = sum/wt[0] * val[0];
+				dp[sum] = sum/wt[0] * val[0];
 		}
 		
 		for (int idx = 1; idx < wt.length; idx++) {
+		    int [] temp = new int[capacity+1];
 			for (int sum = 0; sum <= capacity; sum++) {
-				int skip = dp[idx - 1][sum];
+				int skip = dp[sum];
 				int pick = 0;
 				if (sum >= wt[idx])
-					pick = dp[idx][sum - wt[idx]] + val[idx];
+					pick = temp[sum - wt[idx]] + val[idx];
 				
-				dp[idx][sum] = Math.max(skip, pick);
+				temp[sum] = Math.max(skip, pick);
 			}
+			dp = temp;
 		}
-		return dp[wt.length - 1][capacity];
+		return dp[capacity];
 	}
 }
