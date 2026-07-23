@@ -1,21 +1,20 @@
 class Solution {
 	public int cutRod(int[] price) {
 		// code here
-		int [][] dp = new int[price.length][price.length];
-		for (int r[]: dp) Arrays.fill(r, -1);
-		return f(price, 0, 0, dp);
-	}
-	
-	static int f(int [] nums, int idx, int sum, int [][] dp) {
-		if (sum >= nums.length || idx >= nums.length) return 0;
+		int n = price.length;
+		int [][] dp = new int[n][n + 1];
+		for (int idx = 0; idx<n; idx++) {
+			for (int sum = 0; sum <= n; sum++) {
+				int skip = 0;
+				if (idx>0) skip = dp[idx - 1][sum];
+				
+				int pick = 0;
+				if (sum - idx - 1 >= 0) pick = dp[idx][sum - idx - 1] + price[idx];
+				
+				dp[idx][sum] = Math.max(skip, pick);
+			}
+		}
 		
-		if (dp[idx][sum] != -1) return dp[idx][sum];
-		
-		int skip = f(nums, idx + 1, sum, dp);
-		
-		int pick = 0;
-		if (idx + 1 <= nums.length - sum) pick = nums[idx] + f(nums, idx, sum + idx + 1, dp);
-		
-		return dp[idx][sum] = Math.max(skip, pick);
+		return dp[n - 1][n];
 	}
 }
