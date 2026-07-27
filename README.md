@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1260-shift-2d-grid](https://github.com/the-sick-fella/DSA/tree/master/1260-shift-2d-grid) |
 | [1331-rank-transform-of-an-array](https://github.com/the-sick-fella/DSA/tree/master/1331-rank-transform-of-an-array) |
 | [1463-cherry-pickup-ii](https://github.com/the-sick-fella/DSA/tree/master/1463-cherry-pickup-ii) |
+| [1464-maximum-product-of-two-elements-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/the-sick-fella/DSA/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/the-sick-fella/DSA/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
@@ -148,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0628-maximum-product-of-three-numbers](https://github.com/the-sick-fella/DSA/tree/master/0628-maximum-product-of-three-numbers) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [1331-rank-transform-of-an-array](https://github.com/the-sick-fella/DSA/tree/master/1331-rank-transform-of-an-array) |
+| [1464-maximum-product-of-two-elements-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
@@ -157,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
+| [1464-maximum-product-of-two-elements-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 ## Merge Sort
 |  |
 | ------- |
