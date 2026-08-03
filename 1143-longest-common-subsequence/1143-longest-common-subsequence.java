@@ -1,34 +1,16 @@
 class Solution {
     public int longestCommonSubsequence(String s1, String s2) {
-        int m = s1.length(), n = s2.length();
-        int[][] dp = new int[m + 1][n + 1];
+        int [][] dp = new int[s1.length()][s2.length()];
+        for(int r[] : dp) Arrays.fill(r, -1);
+        return f(s1, s2, 0, 0, dp);
+    }
 
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (s1.charAt(i-1) == s2.charAt(j-1)) {
-                    dp[i][j] = 1 + dp[i - 1][j - 1];
-                    continue;
-                }
+    int f(String s1, String s2, int i, int j, int [][] dp){
+        if(i>=s1.length() || j>=s2.length()) return 0;
 
-                int first = dp[i - 1][j];
-                int sec = dp[i][j - 1];
+        if(dp[i][j] != -1) return dp[i][j];
 
-                dp[i][j] = Math.max(first, sec);
-            }
-        }
-
-        StringBuilder sb = new StringBuilder();
-        int i = m, j = n;
-        while(i>0 && j>0){
-            if(s1.charAt(i-1) == s2.charAt(j-1)){
-                sb.append(s1.charAt(i-1));
-                i--;
-                j--;
-            } else if(dp[i-1][j] > dp[i][j-1]) i--;
-            else j--;
-        }
-        System.out.println(sb.reverse().toString());
-
-        return sb.length();
+        if(s1.charAt(i) == s2.charAt(j)) return dp[i][j] = 1 + f(s1, s2, i+1, j+1, dp);
+        return dp[i][j] = Math.max(f(s1, s2, i+1, j, dp), f(s1, s2, i, j+1, dp));
     }
 }
