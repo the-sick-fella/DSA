@@ -1,27 +1,19 @@
 class Solution {
 	public int longCommSubstr(String s1, String s2) {
 		// code here
-		int [][] dp = new int [s1.length()][s2.length()];
-		for(int r[]:dp) Arrays.fill(r, -1);
-		return f(s1, s2, 0, 0, dp);
-	}
-	
-	static int f(String s1, String s2, int i, int j, int [][] dp) {
-		if (i >= s1.length() || j >= s2.length())
-			return 0;
-		
-		if(dp[i][j] != -1) return dp[i][j];
-		
-		int curr = 0, i2 = i, j2 = j;
-		while (i2<s1.length() && j2<s2.length() && s1.charAt(i2++) == s2.charAt(j2++)) {
-			curr++;
+		int m = s1.length(), n = s2.length();
+		int dp[] = new int [n + 1];
+		int max = 0;
+		for (int i = 1; i <= m; i++) {
+		    int temp [] = new int[n+1];
+			for (int j = 1; j <= n; j++) {
+				if (s1.charAt(i - 1) == s2.charAt(j - 1)) temp[j] = dp[j - 1] + 1;
+					
+				max = Math.max(temp[j], max);
+			}
+			dp = temp;
 		}
 		
-		int left = f(s1, s2, i+1, j, dp);
-		int right = f(s1, s2, i, j+1, dp);
-		
-		left = Math.max(left, right);
-		curr = Math.max(curr, left);
-		return dp[i][j] = curr;
+		return max;
 	}
 }
