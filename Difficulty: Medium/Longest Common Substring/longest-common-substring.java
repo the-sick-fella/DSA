@@ -13,10 +13,8 @@ class Solution {
 		if(dp[i][j] != -1) return dp[i][j];
 		
 		int curr = 0, i2 = i, j2 = j;
-		while (i2<s1.length() && j2<s2.length() && s1.charAt(i2) == s2.charAt(j2)) {
+		while (i2<s1.length() && j2<s2.length() && s1.charAt(i2++) == s2.charAt(j2++)) {
 			curr++;
-			i2++;
-			j2++;
 		}
 		
 		int left = f(s1, s2, i+1, j, dp);
@@ -24,7 +22,6 @@ class Solution {
 		
 		left = Math.max(left, right);
 		curr = Math.max(curr, left);
-// 		System.out.println(i + " " + j + " " + curr);
 		return dp[i][j] = curr;
 	}
 }
