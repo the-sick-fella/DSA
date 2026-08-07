@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/the-sick-fella/DSA/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0131-palindrome-partitioning](https://github.com/the-sick-fella/DSA/tree/master/0131-palindrome-partitioning) |
 | [0316-remove-duplicate-letters](https://github.com/the-sick-fella/DSA/tree/master/0316-remove-duplicate-letters) |
+| [0516-longest-palindromic-subsequence](https://github.com/the-sick-fella/DSA/tree/master/0516-longest-palindromic-subsequence) |
 | [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/the-sick-fella/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1143-longest-common-subsequence](https://github.com/the-sick-fella/DSA/tree/master/1143-longest-common-subsequence) |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/the-sick-fella/DSA/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/the-sick-fella/DSA/tree/master/0494-target-sum) |
 | [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
+| [0516-longest-palindromic-subsequence](https://github.com/the-sick-fella/DSA/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/the-sick-fella/DSA/tree/master/0518-coin-change-ii) |
 | [0931-minimum-falling-path-sum](https://github.com/the-sick-fella/DSA/tree/master/0931-minimum-falling-path-sum) |
 | [1143-longest-common-subsequence](https://github.com/the-sick-fella/DSA/tree/master/1143-longest-common-subsequence) |
