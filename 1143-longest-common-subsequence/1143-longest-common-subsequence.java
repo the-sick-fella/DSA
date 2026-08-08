@@ -1,16 +1,36 @@
 class Solution {
     public int longestCommonSubsequence(String s1, String s2) {
-        int [][] dp = new int[s1.length()][s2.length()];
-        for(int r[] : dp) Arrays.fill(r, -1);
-        return f(s1, s2, 0, 0, dp);
-    }
+        int m = s1.length();
+        int n = s2.length();
 
-    int f(String s1, String s2, int i, int j, int [][] dp){
-        if(i>=s1.length() || j>=s2.length()) return 0;
+        int[][] dp = new int[m + 1][n + 1];
 
-        if(dp[i][j] != -1) return dp[i][j];
+        // Build DP table
+        for (int i = m - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                if (s1.charAt(i) == s2.charAt(j)) {
+                    dp[i][j] = 1 + dp[i + 1][j + 1];
+                } else {
+                    dp[i][j] = Math.max(dp[i + 1][j], dp[i][j + 1]);
+                }
+            }
+        }
 
-        if(s1.charAt(i) == s2.charAt(j)) return dp[i][j] = 1 + f(s1, s2, i+1, j+1, dp);
-        return dp[i][j] = Math.max(f(s1, s2, i+1, j, dp), f(s1, s2, i, j+1, dp));
+        int i = 0, j = 0;
+        StringBuilder sb = new StringBuilder();
+
+        while (i < m && j < n) {
+            if (s1.charAt(i) == s2.charAt(j)) {
+                sb.append(s1.charAt(i));
+                i++;
+                j++;
+            } else if (dp[i + 1][j] > dp[i][j + 1]) {
+                i++;
+            } else {
+                j++;
+            }
+        }
+
+        return sb.length();
     }
 }
