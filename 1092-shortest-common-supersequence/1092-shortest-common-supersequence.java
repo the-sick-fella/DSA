@@ -11,8 +11,7 @@ class Solution {
             }
         }
 
-        List<Integer> rl = new ArrayList<>();
-        List<Integer> cl = new ArrayList<>();
+        List<Integer> rl = new ArrayList<>(), cl = new ArrayList<>();
         int r = 0, c = 0;
         while (r < m && c < n) {
             if (s1.charAt(r) == s2.charAt(c)) {
