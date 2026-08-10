@@ -25,11 +25,6 @@ class Solution {
             else
                 c++;
         }
-        for (int val : rl)
-            System.out.print(val + " ");
-        System.out.println();
-        for (int val : rl)
-            System.out.print(val + " ");
 
         StringBuilder sb = new StringBuilder();
         int i = 0, j = 0, idx1 = 0, idx2 = 0;
