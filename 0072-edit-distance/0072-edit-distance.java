@@ -2,26 +2,19 @@ class Solution {
     public int minDistance(String s, String t) {
         int m = s.length(), n = t.length();
         int[][] dp = new int[m + 1][n + 1];
-        for (int r[] : dp)
-            Arrays.fill(r, -1);
-        return f(s, t, 0, 0, dp);
-    }
-
-    int f(String s, String t, int i, int j, int[][] dp) {
-        int m = s.length(), n = t.length();
-        if (i == m)
-            return n - j;
-        if (j == n)
-            return m - i;
-
-        if (dp[i][j] != -1)
-            return dp[i][j];
-        if (s.charAt(i) == t.charAt(j))
-            return f(s, t, i + 1, j + 1, dp);
-
-        int rep = 1 + f(s, t, i + 1, j + 1, dp);
-        int del = 1 + f(s, t, i + 1, j, dp);
-        int ins = 1 + f(s, t, i, j + 1, dp);
-        return dp[i][j] = Math.min(rep, Math.min(del, ins));
+        for (int i = 0; i < m; i++) dp[i][n] = m - i;
+        for (int j = 0; j < n; j++) dp[m][j] = n - j;
+        for (int i = m - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                if (s.charAt(i) == t.charAt(j)) dp[i][j] = dp[i + 1][j + 1];
+                else {
+                    int rep = 1 + dp[i + 1][j + 1];
+                    int del = 1 + dp[i + 1][j];
+                    int ins = 1 + dp[i][j + 1];
+                    dp[i][j] = Math.min(rep, Math.min(del, ins));
+                }
+            }
+        }
+        return dp[0][0];
     }
 }
