@@ -12,12 +12,12 @@ class Solution {
         for (int i = m - 1; i >= 0; i--) {
             boolean temp[] = new boolean[n + 1];
             for (int j = n - 1; j >= 0; j--) {
-                if (p.charAt(j) == '?' || s.charAt(i) == p.charAt(j))
-                    temp[j] = dp[j + 1];
-                else if (p.charAt(j) == '*') {
+                if (p.charAt(j) == '*') {
                     if (dp[j] || temp[j + 1])
                         temp[j] = true;
                 }
+                else if (p.charAt(j) == '?' || s.charAt(i) == p.charAt(j))
+                    temp[j] = dp[j + 1];
             }
             dp = temp;
         }
