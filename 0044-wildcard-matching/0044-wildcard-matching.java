@@ -6,7 +6,7 @@ class Solution {
         boolean flag = true;
         for (int j = n - 1; j >= 0; j--) {
             if (p.charAt(j) != '*')
-                flag = false;
+                break;
             dp[j] = flag;
         }
 
