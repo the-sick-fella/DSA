@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/the-sick-fella/DSA/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0044-wildcard-matching](https://github.com/the-sick-fella/DSA/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/the-sick-fella/DSA/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/the-sick-fella/DSA/tree/master/0115-distinct-subsequences) |
 | [0131-palindrome-partitioning](https://github.com/the-sick-fella/DSA/tree/master/0131-palindrome-partitioning) |
@@ -108,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/the-sick-fella/DSA/tree/master/0044-wildcard-matching) |
 | [0062-unique-paths](https://github.com/the-sick-fella/DSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/the-sick-fella/DSA/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/the-sick-fella/DSA/tree/master/0070-climbing-stairs) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/the-sick-fella/DSA/tree/master/0044-wildcard-matching) |
 | [0060-permutation-sequence](https://github.com/the-sick-fella/DSA/tree/master/0060-permutation-sequence) |
 | [0231-power-of-two](https://github.com/the-sick-fella/DSA/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/the-sick-fella/DSA/tree/master/0326-power-of-three) |
@@ -216,6 +219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/the-sick-fella/DSA/tree/master/0044-wildcard-matching) |
 | [0316-remove-duplicate-letters](https://github.com/the-sick-fella/DSA/tree/master/0316-remove-duplicate-letters) |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/the-sick-fella/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
