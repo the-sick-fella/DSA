@@ -3,11 +3,10 @@ class Solution {
         int m = s.length(), n = p.length();
         boolean[] dp = new boolean[n + 1];
         dp[n] = true;
-        boolean flag = true;
         for (int j = n - 1; j >= 0; j--) {
             if (p.charAt(j) != '*')
                 break;
-            dp[j] = flag;
+            dp[j] = true;
         }
 
         for (int i = m - 1; i >= 0; i--) {
