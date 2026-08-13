@@ -3,7 +3,7 @@ class Solution {
         int n = nums.length;
         int[] dp = new int[2];
         for (int i = n - 1; i >= 0; i--) {
-            int temp[] = new int[n + 1];
+            int temp[] = new int[2];
             for (int bought = 0; bought < 2; bought++) {
                 if (bought == 1) {
                     int hold = dp[1];
