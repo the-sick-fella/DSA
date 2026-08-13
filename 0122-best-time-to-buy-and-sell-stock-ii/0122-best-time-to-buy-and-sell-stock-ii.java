@@ -1,23 +1,25 @@
 class Solution {
     public int maxProfit(int[] nums) {
         int n = nums.length;
-        int[][] dp = new int[n + 1][2];
+        int[] dp = new int[2];
         for (int i = n - 1; i >= 0; i--) {
+            int temp [] = new int[2];
             for (int bought = 0; bought < 2; bought++) {
                 int profit = 0;
                 if (bought == 1) {
-                    int sell = nums[i] + dp[i + 1][0];
-                    int hold = dp[i + 1][1];
+                    int sell = nums[i] + dp[0];
+                    int hold = dp[1];
                     profit = Math.max(sell, hold);
                 } else {
-                    int buy = -nums[i] + dp[i + 1][1];
-                    int skip = dp[i + 1][0];
+                    int buy = -nums[i] + dp[1];
+                    int skip = dp[0];
                     profit = Math.max(buy, skip);
                 }
-                dp[i][bought] = profit;
+                temp[bought] = profit;
             }
+            dp = temp;
         }
-        return dp[0][0];
+        return dp[0];
     }
 
     int f(int[] nums, int i, int bought, int[][] dp) {
