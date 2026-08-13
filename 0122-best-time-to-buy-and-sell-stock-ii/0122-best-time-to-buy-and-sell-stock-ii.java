@@ -5,15 +5,10 @@ class Solution {
         for (int i = n - 1; i >= 0; i--) {
             int temp[] = new int[2];
             for (int bought = 0; bought < 2; bought++) {
-                if (bought == 1) {
-                    int hold = dp[1];
-                    int sell = nums[i] + dp[0];
-                    temp[bought] = Math.max(hold, sell);
-                } else {
-                    int buy = -nums[i] + dp[1];
-                    int skip = dp[0];
-                    temp[bought] = Math.max(buy, skip);
-                }
+                if (bought == 1)
+                    temp[bought] = Math.max(dp[1], nums[i] + dp[0]);
+                else
+                    temp[bought] = Math.max(dp[0], -nums[i] + dp[1]);
             }
             dp = temp;
         }
