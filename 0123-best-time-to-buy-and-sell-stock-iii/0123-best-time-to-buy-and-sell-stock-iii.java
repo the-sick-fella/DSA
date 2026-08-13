@@ -3,10 +3,10 @@ class Solution {
         int n = nums.length;
         int[] sellDp = new int[3];
         int[] buyDp = new int[3];
+        int currSell[] = new int[3];
+        int currBuy[] = new int[3];
 
         for (int i = n - 1; i >= 0; i--) {
-            int currSell[] = new int[3];
-            int currBuy[] = new int[3];
             for (int count = 2; count >= 0; count--) {
                 int sell = nums[i] + sellDp[count];
                 int hold = buyDp[count];
