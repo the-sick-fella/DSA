@@ -1,29 +1,33 @@
 class Solution {
     public int maxProfit(int[] nums) {
         int n = nums.length;
-        int[][] dp = new int[2][3];
+        int[] sellDp = new int[3];
+        int[] buyDp = new int[3];
 
         for (int i = n - 1; i >= 0; i--) {
-            int temp[][] = new int[2][3];
-            for (int bought = 1; bought >= 0; bought--) {
+            int currSell[] = new int[3];
+            int currBuy[] = new int[3];
+            // for (int bought = 1; bought >= 0; bought--) {
                 for (int count = 2; count >= 0; count--) {
-                    if (bought == 1) {
-                        int sell = nums[i] + dp[0][count];
-                        int hold = dp[1][count];
-                        temp[bought][count] = Math.max(sell, hold);
-                    } else {
+                    // if (bought == 1) {
+                        int sell = nums[i] + sellDp[count];
+                        int hold = buyDp[count];
+                        currBuy[count] = Math.max(sell, hold);
+                    // } else {
                         if (count == 2)
-                            temp[bought][count] = 0;
+                            currSell[count] = 0;
                         else {
-                            int buy = -nums[i] + dp[1][count + 1];
-                            int skip = dp[0][count];
-                            temp[bought][count] = Math.max(buy, skip);
+                            int buy = -nums[i] + buyDp[count + 1];
+                            int skip = sellDp[count];
+                            currSell[count] = Math.max(buy, skip);
                         }
-                    }
+                    // }
                 }
-            }
-            dp = temp;
+            // }
+            // dp = temp;
+            buyDp = currBuy;
+            sellDp = currSell;
         }
-        return dp[0][0];
+        return sellDp[0];
     }
 }
