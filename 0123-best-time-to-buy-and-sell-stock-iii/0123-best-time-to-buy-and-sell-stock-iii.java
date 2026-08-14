@@ -2,7 +2,7 @@ class Solution {
     public int maxProfit(int[] nums) {
         int n = nums.length;
         int[] dp = new int[5];
-            int temp[] = new int[5];
+        int temp[] = new int[5];
         for (int i = n - 1; i >= 0; i--) {
             for (int t = 3; t >= 0; t--) {
                 if (t % 2 == 1) {
