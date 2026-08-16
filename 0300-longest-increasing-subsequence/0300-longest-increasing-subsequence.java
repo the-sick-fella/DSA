@@ -12,7 +12,7 @@ class Solution {
                 dp[i][prev] = Math.max(skip, take);
             }
         }
-        return f(nums, 1, 0, dp);
+        return dp[1][0];
     }
 
     int f(int[] nums, int i, int prev, int[][] dp) {
