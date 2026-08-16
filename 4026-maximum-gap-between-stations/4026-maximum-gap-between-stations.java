@@ -33,10 +33,6 @@ class Solution {
             }
         }
 
-        // for (int i = 0; i < n; i++) {
-        //     System.out.println(e[i] + " -> " + l[i]);
-        // }
-
         int ans = 0;
 
         for (int i = 1; i < n; i++) {
