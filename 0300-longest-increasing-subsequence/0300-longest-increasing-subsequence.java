@@ -4,7 +4,7 @@ class Solution {
         int dp[] = new int[n + 1];
         for (int i = n - 1; i >= 0; i--) {
             int temp[] = new int[n + 1];
-            for (int prev = n - 1; prev >= -1; prev--) {
+            for (int prev = i - 1; prev >= -1; prev--) {
                 int skip = dp[prev + 1];
                 int take = 0;
                 if (prev == -1 || nums[i] > nums[prev]) take = 1 + dp[i + 1];
