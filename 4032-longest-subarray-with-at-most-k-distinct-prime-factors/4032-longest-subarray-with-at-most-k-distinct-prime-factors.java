@@ -31,7 +31,6 @@ class Solution {
         int val = n;
         Set<Integer> set = new HashSet<>();
         for(int i = 2; i*i<=n; i++){
-            // if(n<i) break;
             if(n%i == 0){
                 set.add(i);
                 
