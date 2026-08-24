@@ -22,18 +22,17 @@ class Solution {
 	}
 	
 	static void f(Stack<Node> st, ArrayList<Integer> l) {
-		Stack<Node> st2 = new Stack<>();
-		Node node = st.peek();
+		Node node = st.peek(), last = null;
 		while (!st.isEmpty()) {
 			if (node != null) {
 				if (node.left != null) st.push(node.left);
 				node = node.left;
 			} else {
 				node = st.peek().right;
-				if(node == null || (!st2.isEmpty() && node == st2.peek())){
+				if(node == null || node == last){
 				    node = st.pop();
-				    st2.push(node);
 				    l.add(node.data);
+				    last = node;
 				    node = null;
 				} else{
 				    st.push(node);
