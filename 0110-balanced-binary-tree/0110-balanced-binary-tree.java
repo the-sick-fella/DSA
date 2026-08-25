@@ -16,21 +16,14 @@
 class Solution {
     public boolean isBalanced(TreeNode root) {
         if(root == null) return true;
-        if(!isBalanced(root.left)) return false;
-        if(!isBalanced(root.right)) return false;
-
-        int left = 0, right = 0;
-        if(root.left != null) left = depth(root.left);
-        if(root.right != null) right = depth(root.right);
-        return Math.abs(left - right) > 1 ? false : true;
+        return f(root) == -1 ? false : true;
     }
 
-    int depth(TreeNode node){
-        if(node == null) return 0;
-
-        int left = 0, right = 0;
-        if(node.left != null) left = depth(node.left);
-        if(node.right != null) right = depth(node.right);
-        return 1 + Math.max(left, right);
+    int f(TreeNode node){
+        int lh = 0, rh = 0;
+        if(node.left != null) lh = f(node.left);
+        if(node.right != null) rh = f(node.right);
+        if(lh == -1 || rh == -1 || Math.abs(lh - rh) > 1) return -1;
+        return 1 + Math.max(lh, rh);
     }
 }
