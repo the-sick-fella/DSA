@@ -24,18 +24,20 @@ class Solution {
         for (int key : map.keySet()) {
             List<int[]> temp = map.get(key);
 
+            // Sort by row (index 0) first, then by value (index 1)
             Collections.sort(temp, (a, b) -> {
                 if (a[0] != b[0]) {
-                    return a[0] - b[0];
+                    return Integer.compare(a[0], b[0]); // Primary: Row asc
                 }
-                return a[1] - b[1];
+                return Integer.compare(a[1], b[1]); // Secondary: Value asc
             });
 
-            List<Integer> curr = new ArrayList<>();
+            // Extract just the node values for the final result
+            List<Integer> colValues = new ArrayList<>();
             for (int[] arr : temp) {
-                curr.add(arr[1]);
+                colValues.add(arr[1]);
             }
-            list.add(curr);
+            list.add(colValues);
         }
 
         return list;
