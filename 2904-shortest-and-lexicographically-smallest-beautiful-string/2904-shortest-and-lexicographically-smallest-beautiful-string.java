@@ -6,7 +6,7 @@ class Solution {
             if(s.charAt(si) == '1') break;
         }
         
-        int ei = 0, count = 0;
+        int ei = si, count = 0;
         String ans = "";
         while(ei < s.length()){
             if(s.charAt(ei) == '1') count++;
