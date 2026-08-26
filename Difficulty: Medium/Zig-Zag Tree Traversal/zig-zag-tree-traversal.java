@@ -32,7 +32,7 @@ class Solution {
                 else temp.addLast(node.data);
             }
             for(int num : temp) list.add(num);
-            !reverse;
+            reverse = !reverse;
         }
     }
 }
