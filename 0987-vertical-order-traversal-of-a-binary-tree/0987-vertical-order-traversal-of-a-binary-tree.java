@@ -15,45 +15,32 @@
  */
 class Solution {
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        List<List<Integer>> list = new ArrayList<>();
-        if (root == null)
-            return list;
-        TreeMap<Integer, List<int[]>> map = new TreeMap<>();
-        f(map, root, 0, 0);
-
-        for (int key : map.keySet()) {
-            List<int[]> temp = map.get(key);
-
-            // Sort by row (index 0) first, then by value (index 1)
-            Collections.sort(temp, (a, b) -> {
-                if (a[0] != b[0]) {
-                    return Integer.compare(a[0], b[0]); // Primary: Row asc
-                }
-                return Integer.compare(a[1], b[1]); // Secondary: Value asc
-            });
-
-            // Extract just the node values for the final result
-            List<Integer> colValues = new ArrayList<>();
-            for (int[] arr : temp) {
-                colValues.add(arr[1]);
+        List<List<Integer>> ans = new ArrayList<>();
+        if(root == null) return ans;
+        TreeMap<Integer, TreeMap<Integer, List<Integer>>> colMap = new TreeMap<>();
+        f(root, colMap, 0, 0);
+        for(int col : colMap.keySet()){
+            TreeMap<Integer, List<Integer>> rowMap = colMap.get(col);
+            List<Integer> list = new ArrayList<>();
+            for(int row : rowMap.keySet()){
+                List<Integer> temp = rowMap.get(row);
+                Collections.sort(temp);
+                for(int val : temp) list.add(val);
             }
-            list.add(colValues);
+            ans.add(list);
         }
-
-        return list;
+        return ans;
     }
 
-    void f(TreeMap<Integer, List<int[]>> map, TreeNode node, int row, int col) {
-        List<int[]> curr = map.getOrDefault(col, new ArrayList<>());
-        int temp [] = new int[2];
-        temp[0] = row;
-        temp[1] = node.val;
-        curr.add(temp);
-        map.put(col, curr);
+    void f(TreeNode node, TreeMap<Integer, TreeMap<Integer, List<Integer>>> colMap, int row, int col){
+        TreeMap<Integer, List<Integer>> rowMap = colMap.getOrDefault(col, new TreeMap<>());
+        List<Integer> list = rowMap.getOrDefault(row, new ArrayList<>());
 
-        if (node.left != null)
-            f(map, node.left, row + 1, col - 1);
-        if (node.right != null)
-            f(map, node.right, row + 1, col + 1);
+        list.add(node.val);
+        rowMap.put(row, list);
+        colMap.put(col, rowMap);
+
+        if(node.left != null) f(node.left, colMap, row+1, col-1);
+        if(node.right != null) f(node.right, colMap, row+1, col+1);
     }
 }
