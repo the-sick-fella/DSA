@@ -13,7 +13,6 @@ class Solution {
             p2 = p1;
             p1 = curr;
         }
-
         return p1;
     }
 }
