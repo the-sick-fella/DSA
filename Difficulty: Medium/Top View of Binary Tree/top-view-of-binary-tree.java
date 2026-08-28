@@ -28,10 +28,7 @@ class Solution {
     
     void getNodes(TreeMap<Integer, List<int[]>> map, Node node, int row, int col){
         List<int[]> curr = map.getOrDefault(col, new ArrayList<>());
-            int temp [] = new int[2];
-            temp[0] = row;
-            temp[1] = node.data;
-        curr.add(temp);
+        curr.add(new int[]{row, node.data});
         map.put(col, curr);
         
         if(node.left != null) getNodes(map, node.left, row+1, col-1);
