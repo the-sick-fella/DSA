@@ -27,8 +27,11 @@ class Solution {
 	}
 	
 	void getNodes(HashMap<Integer, int[]> map, Node node, int row, int col, int[] range) {
-		if (map.get(col) == null || map.get(col)[0] <= row)
+		int[] curr = map.get(col);
+		
+		if (curr == null || curr[0] <= row) {
 			map.put(col, new int[] {row, node.data});
+		}
 		
 		range[0] = Math.min(range[0], col);
 		range[1] = Math.max(range[1], col);
