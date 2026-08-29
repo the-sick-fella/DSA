@@ -15,43 +15,52 @@
  */
 class Solution {
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        List<List<Integer>> list = new ArrayList<>();
-        if (root == null)
-            return list;
-        TreeMap<Integer, List<int[]>> map = new TreeMap<>();
-        f(map, root, 0, 0);
-
-        for (int key : map.keySet()) {
-            List<int[]> temp = map.get(key);
-
-            Collections.sort(temp, (a, b) -> {
-                if (a[0] != b[0]) {
-                    return Integer.compare(a[0], b[0]);
-                }
-                return Integer.compare(a[1], b[1]);
-            });
-
-            List<Integer> colValues = new ArrayList<>();
-            for (int[] arr : temp) {
-                colValues.add(arr[1]);
+        List<List<Integer>> ans = new ArrayList<>();
+        if(root == null) return ans;
+        TreeMap<Integer, TreeMap<Integer, List<Integer>>> colMap = new TreeMap<>();
+        f(root, colMap);
+        for(int col : colMap.keySet()){
+            TreeMap<Integer, List<Integer>> rowMap = colMap.get(col);
+            List<Integer> list = new ArrayList<>();
+            for(int row : rowMap.keySet()){
+                List<Integer> temp = rowMap.get(row);
+                Collections.sort(temp);
+                for(int val : temp) list.add(val);
             }
-            list.add(colValues);
+            ans.add(list);
         }
-
-        return list;
+        return ans;
     }
 
-    void f(TreeMap<Integer, List<int[]>> map, TreeNode node, int row, int col) {
-        List<int[]> curr = map.getOrDefault(col, new ArrayList<>());
-        int temp [] = new int[2];
-        temp[0] = row;
-        temp[1] = node.val;
-        curr.add(temp);
-        map.put(col, curr);
+    void f(TreeNode root, TreeMap<Integer, TreeMap<Integer, List<Integer>>> colMap){
+        Queue<ND> q = new LinkedList<>();
+        ND rootND = new ND(root, 0, 0);
+        q.offer(rootND);
 
-        if (node.left != null)
-            f(map, node.left, row + 1, col - 1);
-        if (node.right != null)
-            f(map, node.right, row + 1, col + 1);
+        while(!q.isEmpty()){
+            ND nd = q.poll();
+            TreeNode node = nd.node; 
+            int row = nd.row, col = nd.col;
+
+            if(node.left != null) q.offer(new ND(node.left, row+1, col-1));
+            if(node.right != null) q.offer(new ND(node.right, row+1, col+1));
+
+            TreeMap<Integer, List<Integer>> curr = colMap.getOrDefault(col, new TreeMap<>());
+            List<Integer> list = curr.getOrDefault(row, new ArrayList<>());
+            list.add(node.val);
+            curr.put(row, list);
+            colMap.put(col, curr);
+        }
+    }
+}
+
+class ND{
+    int row, col;
+    TreeNode node;
+
+    public ND(TreeNode node, int row, int col){
+        this.node = node;
+        this.row = row;
+        this.col = col;
     }
 }
