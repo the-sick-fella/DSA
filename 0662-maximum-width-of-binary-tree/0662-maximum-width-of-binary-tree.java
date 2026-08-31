@@ -33,20 +33,22 @@ class Solution {
         while(!q.isEmpty()){
             int size = q.size();
             int min = 0, max = 0;
+            int lmin = 0;
 
             for(int i = 0; i<size; i++){
                 Pair p = q.poll();
-                int idx = p.idx;
+                if(i == 0) lmin = p.idx;
+                int idx = p.idx - lmin + 1;
                 TreeNode node = p.node;
 
-                if(node.left != null) q.offer(new Pair(node.left, 2*idx));
-                if(node.right != null) q.offer(new Pair(node.right, 2*idx+1));
+                if(node.left != null) q.offer(new Pair(node.left, 2*idx-1));
+                if(node.right != null) q.offer(new Pair(node.right, 2*idx));
 
                 if(i == 0) min = idx;
                 if(i == size-1) max = idx;
             }
 
-            ans = Math.max(ans, max-min+1);
+            ans = Math.max(ans, max);
         }
         return ans;
     }
