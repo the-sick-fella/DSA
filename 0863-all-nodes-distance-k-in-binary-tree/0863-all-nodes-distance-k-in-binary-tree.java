@@ -39,17 +39,6 @@ class Solution {
             }
         }
 
-// for (Map.Entry<TreeNode, Set<TreeNode>> entry : map.entrySet()) {
-//     TreeNode node = entry.getKey();
-
-//     System.out.print(node.val + " -> ");
-
-//     for (TreeNode neighbour : entry.getValue()) {
-//         System.out.print(neighbour.val + " ");
-//     }
-
-//     System.out.println();
-// }
         q = new LinkedList<>();
         q.offer(target);
 
