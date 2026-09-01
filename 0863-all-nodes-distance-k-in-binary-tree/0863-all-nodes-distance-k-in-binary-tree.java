@@ -9,33 +9,23 @@
  */
 class Solution {
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
-        Map<TreeNode, Set<TreeNode>> map = new HashMap<>();
+        Map<TreeNode, TreeNode> map = new HashMap<>();
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
 
-        while(!q.isEmpty()){
+        while (!q.isEmpty()) {
             int size = q.size();
-            for(int i = 0; i<size; i++){
+            for (int i = 0; i < size; i++) {
                 TreeNode node = q.poll();
-                Set<TreeNode> set = map.getOrDefault(node, new HashSet<>());
-                if(node.left != null){
+                if (node.left != null) {
                     q.offer(node.left);
-                    set.add(node.left);
-
-                    Set<TreeNode> ls = map.getOrDefault(node.left, new HashSet<>());
-                    ls.add(node);
-                    map.put(node.left, ls);
+                    map.put(node.left, node);
                 }
 
-                if(node.right != null){
+                if (node.right != null) {
                     q.offer(node.right);
-                    set.add(node.right);
-
-                    Set<TreeNode> rs = map.getOrDefault(node.right, new HashSet<>());
-                    rs.add(node);
-                    map.put(node.right, rs);
+                    map.put(node.right, node);
                 }
-                map.put(node, set);
             }
         }
 
@@ -44,23 +34,35 @@ class Solution {
 
         Set<TreeNode> visited = new HashSet<>();
         visited.add(target);
-        for(int i = 0; i<k; i++){
-            if(q.isEmpty()) break;
+        for (int i = 0; i < k; i++) {
+            if (q.isEmpty())
+                break;
             int size = q.size();
-            for(int j = 0; j<size; j++){
+            for (int j = 0; j < size; j++) {
                 TreeNode node = q.poll();
-                Set<TreeNode> nextSet = map.get(node);
-                for(TreeNode temp : nextSet){
-                    if(!visited.contains(temp)){
-                        q.offer(temp);
-                        visited.add(temp);
+
+                if (node != root) {
+                    TreeNode parent = map.get(node);
+                    if (!visited.contains(parent)) {
+                        q.offer(parent);
+                        visited.add(parent);
                     }
+                }
+
+                if(node.left != null && !visited.contains(node.left)){
+                    q.offer(node.left);
+                    visited.add(node.left);
+                }
+
+                if(node.right != null && !visited.contains(node.right)){
+                    q.offer(node.right);
+                    visited.add(node.right);
                 }
             }
         }
 
         List<Integer> list = new ArrayList<>();
-        while(!q.isEmpty()) list.add(q.poll().val);
+        while (!q.isEmpty()) list.add(q.poll().val);
         return list;
     }
 }
