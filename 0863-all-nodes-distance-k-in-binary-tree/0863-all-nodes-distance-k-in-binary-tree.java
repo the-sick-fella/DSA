@@ -35,8 +35,7 @@ class Solution {
         Set<TreeNode> visited = new HashSet<>();
         visited.add(target);
         for (int i = 0; i < k; i++) {
-            if (q.isEmpty())
-                break;
+            if (q.isEmpty()) break;
             int size = q.size();
             for (int j = 0; j < size; j++) {
                 TreeNode node = q.poll();
