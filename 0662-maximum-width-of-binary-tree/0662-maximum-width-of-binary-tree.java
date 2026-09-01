@@ -46,7 +46,6 @@ class Solution {
                 if(i == 0) min = idx;
                 if(i == size-1) max = idx;
             }
-
             ans = Math.max(ans, max);
         }
         return ans;
