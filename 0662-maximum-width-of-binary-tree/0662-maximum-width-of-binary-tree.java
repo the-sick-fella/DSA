@@ -29,7 +29,6 @@ class Solution {
         q.offer(new Pair(root, 1));
 
         int ans = 1;
-
         while(!q.isEmpty()){
             int size = q.size();
             int min = 0, max = 0;
