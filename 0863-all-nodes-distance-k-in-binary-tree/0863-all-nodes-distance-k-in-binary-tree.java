@@ -33,6 +33,7 @@ class Solution {
         Set<TreeNode> vis = new HashSet<>();
 
         for(int i = 0; i<k; i++){
+            if(q.isEmpty()) break;
             int size = q.size();
             for(int j = 0; j<size; j++){
                 TreeNode node = q.poll();
