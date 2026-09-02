@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1189-maximum-number-of-balloons](https://github.com/the-sick-fella/DSA/tree/master/1189-maximum-number-of-balloons) |
 | [1331-rank-transform-of-an-array](https://github.com/the-sick-fella/DSA/tree/master/1331-rank-transform-of-an-array) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/the-sick-fella/DSA/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/the-sick-fella/DSA/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 | [2540-minimum-common-value](https://github.com/the-sick-fella/DSA/tree/master/2540-minimum-common-value) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/the-sick-fella/DSA/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/the-sick-fella/DSA/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
@@ -328,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [2236-root-equals-sum-of-children](https://github.com/the-sick-fella/DSA/tree/master/2236-root-equals-sum-of-children) |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/the-sick-fella/DSA/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -340,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0662-maximum-width-of-binary-tree) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/the-sick-fella/DSA/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 ## Binary Tree
 |  |
 | ------- |
@@ -361,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [2236-root-equals-sum-of-children](https://github.com/the-sick-fella/DSA/tree/master/2236-root-equals-sum-of-children) |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/the-sick-fella/DSA/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 ## Segment Tree
 |  |
 | ------- |
@@ -408,6 +412,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0662-maximum-width-of-binary-tree) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/the-sick-fella/DSA/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 ## DP on Trees
 |  |
 | ------- |
