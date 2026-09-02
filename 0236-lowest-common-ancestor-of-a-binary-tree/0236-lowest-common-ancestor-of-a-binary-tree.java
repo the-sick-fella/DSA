@@ -7,19 +7,14 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        return getLCA(root, p, q);
-    }
-
-    TreeNode getLCA(TreeNode node, TreeNode p, TreeNode q) {
-        if(node == null) return null;
-        if(node == p || node == q) return node;
-
-        TreeNode left = getLCA(node.left, p, q);
-        TreeNode right = getLCA(node.right, p, q);
-        if(left != null && right != null) return node;
-        return left != null ? left : right;
+        if(root == p || root == q) return root;
+        if(root == null) return null;
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        if(left != null && right != null) return root;
+        if(left != null) return left;
+        return right;
     }
 }
