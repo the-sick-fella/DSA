@@ -28,9 +28,9 @@ class Solution {
         TreeNode node = new TreeNode(pre[p1]);
         if (p1 < p2) {
             int idx = map.get(pre[p1]);
-            int num = idx - i1;
-            node.left = construct(pre, p1 + 1, p1 + num, in, i1, idx - 1, map);
-            node.right = construct(pre, p1 + num + 1, p2, in, idx + 1, i2, map);
+            int numLeft = idx - i1;
+            node.left = construct(pre, p1 + 1, p1 + numLeft, in, i1, idx - 1, map);
+            node.right = construct(pre, p1 + numLeft + 1, p2, in, idx + 1, i2, map);
         }
         return node;
     }
