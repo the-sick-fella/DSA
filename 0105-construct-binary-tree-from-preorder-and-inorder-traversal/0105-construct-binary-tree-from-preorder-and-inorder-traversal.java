@@ -17,7 +17,7 @@ class Solution {
     public TreeNode buildTree(int[] pre, int[] in) {
         int n = pre.length;
         Map<Integer, Integer> map = new HashMap<>();
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             map.put(in[i], i);
         }
         return construct(pre, 0, n - 1, in, 0, n - 1, map);
@@ -28,8 +28,9 @@ class Solution {
         TreeNode node = new TreeNode(pre[p1]);
         if (p1 < p2) {
             int idx = map.get(pre[p1]);
-            node.left = construct(pre, p1 + 1, p1 + (idx - i1), in, i1, idx - 1, map);
-            node.right = construct(pre, p1 + (idx - i1) + 1, p2, in, idx + 1, i2, map);
+            int num = idx - i1;
+            node.left = construct(pre, p1 + 1, p1 + num, in, i1, idx - 1, map);
+            node.right = construct(pre, p1 + num + 1, p2, in, idx + 1, i2, map);
         }
         return node;
     }
