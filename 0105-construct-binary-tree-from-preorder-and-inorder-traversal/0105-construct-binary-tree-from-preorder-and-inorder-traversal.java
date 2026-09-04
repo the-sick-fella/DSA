@@ -23,17 +23,17 @@ class Solution {
         if (p1 > p2 || i1 > i2) return null;
         TreeNode node = new TreeNode(pre[p1]);
         if (p1 < p2) {
-            int idx = getIndex(in, pre[p1]);
+            int idx = getIndex(in, i1, i2, pre[p1]);
             node.left = construct(pre, p1 + 1, p1 + (idx - i1), in, i1, idx - 1);
             node.right = construct(pre, p1 + (idx - i1) + 1, p2, in, idx + 1, i2);
         }
         return node;
     }
 
-    int getIndex(int[] nums, int val) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == val)
-                return i;
+    int getIndex(int[] nums, int i1, int i2, int val) {
+        for (; i1 <= i2; i1++) {
+            if (nums[i1] == val)
+                return i1;
         }
         return -1;
     }
