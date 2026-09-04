@@ -10,8 +10,7 @@ class Solution {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < nums.length; i++) {
             max = Math.max(max, nums[i]);
-            if (max - arr[i] <= k)
-                return i;
+            if (max - arr[i] <= k) return i;
         }
 
         return -1;
