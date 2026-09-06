@@ -7,10 +7,9 @@ class Solution {
             int temp[] = new int[n + 1];
             temp[n] = 1;
             for (int j = n - 1; j >= 0; j--) {
-                int ans = dp[j];
+                temp[j] = dp[j];
                 if (s.charAt(i) == t.charAt(j))
-                    ans += dp[j + 1];
-                temp[j] = ans;
+                    temp[j] += dp[j + 1];
             }
             dp = temp;
         }
