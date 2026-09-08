@@ -36,11 +36,12 @@ public class Codec {
 
                 q.offer(node.left);
                 q.offer(node.right);
+
                 if (node.left != null || node.right != null)
                     flag = true;
             }
         }
-        sb.setLength(sb.length() - 1);
+        // sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 
@@ -52,7 +53,7 @@ public class Codec {
         int i = 0;
         while (i < s.length()) {
             StringBuilder sb = new StringBuilder();
-            while (i < s.length() && s.charAt(i) != ',') {
+            while (s.charAt(i) != ',') {
                 sb.append(s.charAt(i++));
             }
 
