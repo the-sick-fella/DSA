@@ -41,7 +41,6 @@ public class Codec {
                     flag = true;
             }
         }
-        // sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 
