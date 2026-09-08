@@ -30,7 +30,7 @@ public class Codec {
                     sb.append(node.val);
 
                 sb.append(',');
-                
+
                 if(node == null) continue;
                 
                 if(node.left == null)
@@ -83,11 +83,7 @@ public class Codec {
         while(!q.isEmpty()){
             TreeNode node = q2.poll();
 
-            if(node == null){
-                // q.poll();
-                // q.poll();
-                continue;
-            }
+            if(node == null) continue;
 
             node.left = q.poll();
             q2.offer(node.left);
