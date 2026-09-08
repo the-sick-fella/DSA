@@ -30,17 +30,26 @@ public class Codec {
                     sb.append(node.val);
 
                 sb.append(',');
-
-                if (node == null)
-                    continue;
-
-                q.offer(node.left);
-                q.offer(node.right);
-
-                if (node.left != null || node.right != null)
+                
+                if(node == null) continue;
+                
+                if(node.left == null)
+                    q.offer(null);
+                else {
+                    q.offer(node.left);
                     flag = true;
+                }
+
+                if (node.right == null)
+                    q.offer(null);
+                else {
+                    q.offer(node.right);
+                    flag = true;
+                }
             }
         }
+        sb.setLength(sb.length() - 1);
+        System.out.println(sb.toString());
         return sb.toString();
     }
 
@@ -52,7 +61,7 @@ public class Codec {
         int i = 0;
         while (i < s.length()) {
             StringBuilder sb = new StringBuilder();
-            while (s.charAt(i) != ',') {
+            while (i < s.length() && s.charAt(i) != ',') {
                 sb.append(s.charAt(i++));
             }
 
@@ -71,11 +80,14 @@ public class Codec {
         Queue<TreeNode> q2 = new LinkedList<>();
         TreeNode root = q.poll();
         q2.offer(root);
-        while (!q.isEmpty()) {
+        while(!q.isEmpty()){
             TreeNode node = q2.poll();
 
-            if (node == null)
+            if(node == null){
+                // q.poll();
+                // q.poll();
                 continue;
+            }
 
             node.left = q.poll();
             q2.offer(node.left);
