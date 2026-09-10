@@ -32,11 +32,11 @@ class Solution {
         if(node == null) return new Combo(0,0,0);
         Combo left = getCombo(node.left);
         Combo right = getCombo(node.right);
-        int ans = left.ans + right.ans;
-        int count = left.count + right.count + 1;
-        int sum = left.sum + right.sum + node.val;
+        left.ans = left.ans + right.ans;
+        left.count = left.count + right.count + 1;
+        left.sum = left.sum + right.sum + node.val;
 
-        if(sum/count == node.val) ans++;
-        return new Combo(ans, count, sum);
+        if(left.sum/left.count == node.val) left.ans++;
+        return left;
     }
 }
