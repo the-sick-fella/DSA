@@ -2,8 +2,8 @@ class Solution {
     public int totalNumbers(int[] digits) {
         int freq [] = new int[10];
         for(int digit : digits) freq[digit]++;
-        int ans = 0;
 
+        int ans = 0;
         for(int f = 1; f<10; f++){
             if(freq[f] == 0) continue;
             freq[f]--;
