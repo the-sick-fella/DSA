@@ -23,7 +23,7 @@ class Solution {
         if(node == null) return true;
 
         if(node.val <= min || node.val >= max) return false;
-        if(!check(node.left, min, Math.min(node.val, max))) return false;
-        return check(node.right, Math.max(min, node.val), max);
+
+        return check(node.left, min, node.val) && check(node.right, node.val, max);
     }
 }
