@@ -9,7 +9,7 @@ class Solution {
     }
 
     int f(int n, int s, int[][] dp) {
-        if(n==0) return 0;
+        if(n==1) return 1;
         if (n == s) return 1;
         if (dp[n][s] != -1)
             return dp[n][s];
