@@ -1,8 +1,8 @@
 class Solution {
     public int minDays(int n) {
         int x = 1;
-        while((x*x+1)/2 <= n) x++;
-        int dp[][] = new int[n][x+2];
+        while((x*(x+1))/2 <= n) x++;
+        int dp[][] = new int[n][x+1];
         for (int r[] : dp)
             Arrays.fill(r, -1);
         return 1 + f(n - 1, 2, dp);
