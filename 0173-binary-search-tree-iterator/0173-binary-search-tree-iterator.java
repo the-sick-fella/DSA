@@ -36,13 +36,16 @@ class BSTIterator {
 
     TreeNode getNext(){
         TreeNode parent = map.get(node);
+        map.remove(node);
         if(node.right == null){
             node = parent;
             return parent;
         }
 
         node = node.right;
-        if(parent != null) map.put(node, parent);
+        if(parent != null){
+            map.put(node, parent);
+        }
 
         while(node.left != null){
             map.put(node.left, node);
