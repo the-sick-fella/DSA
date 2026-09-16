@@ -14,16 +14,14 @@
  * }
  */
 class BSTIterator {
-    TreeNode root, node;
-    Map<TreeNode, TreeNode> map;
+    TreeNode node;
+    Stack<TreeNode> st;
 
     public BSTIterator(TreeNode root) {
-        this.root = root;
         node = new TreeNode(-1);
-        map = new HashMap<>();
-
+        st = new Stack<>();
         while(root.left != null){
-            map.put(root.left, root);
+            st.push(root);
             root = root.left;
         }
         node.right = root;
@@ -35,20 +33,10 @@ class BSTIterator {
     }
 
     TreeNode getNext(){
-        TreeNode parent = map.get(node);
-        map.remove(node);
-        if(node.right == null){
-            node = parent;
-            return parent;
-        }
-
         node = node.right;
-        if(parent != null){
-            map.put(node, parent);
-        }
-
+        if(node == null) return node = st.pop();
         while(node.left != null){
-            map.put(node.left, node);
+            st.push(node);
             node = node.left;
         }
         return node;
@@ -56,7 +44,7 @@ class BSTIterator {
     
     public boolean hasNext() {
         if(node == null) return false;
-        return node.right != null || map.get(node) != null;
+        return node.right != null || !st.isEmpty();
     }
 }
 
