@@ -15,32 +15,20 @@
  */
 class Solution {
     public void recoverTree(TreeNode root) {
-        List<TreeNode> list = new ArrayList<>();
-        inorder(root, list);
-        TreeNode f = null;
-        TreeNode s = null;
-        int idx1 = -1, idx2 = -1; 
-        int i = 1;
-        while(i<list.size()){
-            int curr = list.get(i).val;
-            if(curr < list.get(i-1).val){
-                if(idx1 == -1) idx1 = i-1;
-                else idx2 = i;
-            }
-            i++;
-        }
-        f = list.get(idx1);
-        if(idx2 == -1) s = list.get(idx1+1);
-        else s = list.get(idx2);
-
-        int temp = f.val;
-        f.val = s.val;
-        s.val = temp; 
+        TreeNode [] arr = new TreeNode[3];
+        inorder(root, arr);
+        int temp = arr[1].val;
+        arr[1].val = arr[2].val;
+        arr[2].val = temp;
     }
 
-    void inorder(TreeNode node, List<TreeNode> list){
-        if(node.left != null) inorder(node.left, list);
-        list.add(node);
-        if(node.right != null) inorder(node.right, list);
+    void inorder(TreeNode node, TreeNode [] arr){
+        if(node.left != null) inorder(node.left, arr);
+        if(arr[0] != null && node.val < arr[0].val){
+            arr[2] = node;
+            if(arr[1] == null) arr[1] = arr[0];
+        }
+        arr[0] = node;
+        if(node.right != null) inorder(node.right, arr);
     }
 }
