@@ -8,9 +8,7 @@ class Solution {
         while(j < nums.length){
             sum += nums[j++];
 
-            while(sum > x){
-                sum -= nums[i++];
-            }
+            while(sum > x) sum -= nums[i++];
 
             if(sum == x) ans = Math.max(ans, j-i);
         }
