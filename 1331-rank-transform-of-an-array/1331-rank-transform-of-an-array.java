@@ -1,17 +1,18 @@
 class Solution {
     public int[] arrayRankTransform(int[] arr) {
-        int[] temp = arr.clone();
-        Arrays.sort(temp);
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int x : arr)
+            pq.offer(x);
 
-        int rank = 1;
         Map<Integer, Integer> map = new HashMap<>();
-        for (int num : temp) {
-            if (!map.containsKey(num)){
-                map.put(num, rank++);
-            }
+        int r = 1;
+        while (!pq.isEmpty()) {
+            int x = pq.poll();
+            if (!map.containsKey(x))
+                map.put(x, r++);
         }
 
-        for(int i = 0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = map.get(arr[i]);
         }
         return arr;
