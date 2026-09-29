@@ -5,9 +5,9 @@ class Solution {
 
         int rank = 1;
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < temp.length; i++) {
-            if (!map.containsKey(temp[i])){
-                map.put(temp[i], rank++);
+        for (int num : temp) {
+            if (!map.containsKey(num)){
+                map.put(num, rank++);
             }
         }
 
