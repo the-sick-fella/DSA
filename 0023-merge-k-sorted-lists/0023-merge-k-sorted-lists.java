@@ -17,8 +17,6 @@ class Solution {
             if(node != null) heap.offer(node);
         }
 
-        // for(ListNode node: heap) System.out.println(node.val);
-
         while(!heap.isEmpty()){
             ListNode curr = heap.poll();
             temp.next = curr;
