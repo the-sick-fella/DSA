@@ -7,6 +7,7 @@ class Solution {
             if(map.containsKey(num + k)){
                 ans = Math.max(ans, sum-map.get(num+k));
             }
+            
             if(map.containsKey(num - k)){
                 ans = Math.max(ans, sum-map.get(num-k));
             }
