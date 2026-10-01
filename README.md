@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0494-target-sum](https://github.com/the-sick-fella/DSA/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/the-sick-fella/DSA/tree/master/0518-coin-change-ii) |
+| [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/the-sick-fella/DSA/tree/master/0628-maximum-product-of-three-numbers) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/the-sick-fella/DSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0860-lemonade-change](https://github.com/the-sick-fella/DSA/tree/master/0860-lemonade-change) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/the-sick-fella/DSA/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/the-sick-fella/DSA/tree/master/0037-sudoku-solver) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/the-sick-fella/DSA/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/the-sick-fella/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
@@ -223,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/the-sick-fella/DSA/tree/master/0047-permutations-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
+| [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/the-sick-fella/DSA/tree/master/0628-maximum-product-of-three-numbers) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
@@ -240,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/the-sick-fella/DSA/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/0215-kth-largest-element-in-an-array) |
+| [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/the-sick-fella/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
@@ -260,6 +264,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting Sort
 |  |
 | ------- |
+| [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [1189-maximum-number-of-balloons](https://github.com/the-sick-fella/DSA/tree/master/1189-maximum-number-of-balloons) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/the-sick-fella/DSA/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
@@ -292,6 +297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/the-sick-fella/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0316-remove-duplicate-letters](https://github.com/the-sick-fella/DSA/tree/master/0316-remove-duplicate-letters) |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
+| [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/the-sick-fella/DSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0860-lemonade-change](https://github.com/the-sick-fella/DSA/tree/master/0860-lemonade-change) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/the-sick-fella/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
