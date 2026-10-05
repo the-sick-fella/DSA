@@ -1,36 +1,17 @@
 class Solution {
-    public boolean isNStraightHand(int[] hand, int k) {
-        if (k == 1)
-            return true;
+    public boolean isNStraightHand(int[] hand, int groupSize) {
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+        for(int val : hand) map.put(val, map.getOrDefault(val, 0)+1);
 
-        if (hand.length % k != 0)
-            return false;
-
-        PriorityQueue<Integer> heap = new PriorityQueue<>();
-        for (int val : hand)
-            heap.offer(val);
-
-        while (!heap.isEmpty()) {
-            if (!findNextK(heap, heap.poll(), k - 1))
-                return false;
+        while(!map.isEmpty()){
+            int val = map.firstKey();
+            for(int i = 0; i < groupSize; i++){
+                int curr = val + i;
+                if(!map.containsKey(curr)) return false;
+                if(map.get(curr) == 1) map.remove(curr);
+                else map.put(curr, map.get(curr)-1);
+            }
         }
-        return true;
-    }
-
-    boolean findNextK(PriorityQueue<Integer> heap, int val, int count) {
-        Queue<Integer> q = new LinkedList<>();
-        while (count > 0) {
-            while (!heap.isEmpty() && heap.peek() == val)
-                q.offer(heap.poll());
-            if (!heap.isEmpty() && heap.poll() == val + 1) {
-                val++;
-                count--;
-            } else 
-                return false;
-        }
-
-        while (!q.isEmpty())
-            heap.offer(q.poll());
         return true;
     }
 }
