@@ -24,9 +24,9 @@ class Solution {
                 q.offer(heap.poll());
             if (!heap.isEmpty() && heap.poll() == val + 1) {
                 val++;
-            } else
+                count--;
+            } else 
                 return false;
-            count--;
         }
 
         while (!q.isEmpty())
