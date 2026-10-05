@@ -8,6 +8,7 @@ class Solution {
                 if((c == ')' && st.pop() != '(') || (c == '}' && st.pop() != '{') || (c == ']' && st.pop() != '[')) return false;
             }
         }
+        
         return st.isEmpty();
     }
 }
