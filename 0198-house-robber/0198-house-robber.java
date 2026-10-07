@@ -1,20 +1,14 @@
 class Solution {
     public int rob(int[] nums) {
-        if(nums.length == 1) return nums[0];
+        int [] pick = new int [nums.length];
+        int skip [] = new int[nums.length];
+        skip[0] = 0;
+        pick[0] = nums[0];
 
-        int p2 = nums[0];
-        int p1 = Math.max(nums[1], nums[0]);
-
-        for(int i = 2; i<nums.length; i++){
-            int pick = p2 + nums[i];
-            int skip = p1;
-
-            int curr = Math.max(pick, skip);
-
-            p2 = p1;
-            p1 = curr;
+        for(int i = 1; i<nums.length; i++){
+            skip[i] = Math.max(skip[i-1], pick[i-1]);
+            pick[i] = skip[i-1]+nums[i];
         }
-
-        return p1;
+        return Math.max(pick[nums.length-1], skip[nums.length-1]);
     }
 }
