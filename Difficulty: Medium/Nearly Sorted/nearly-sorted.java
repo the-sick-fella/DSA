@@ -8,6 +8,7 @@ class Solution {
 				arr[idx++] = heap.poll();
 			}
 		}
+		
 		while (!heap.isEmpty()) {
 			arr[idx++] = heap.poll();
 		}
