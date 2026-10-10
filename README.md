@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/the-sick-fella/DSA/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/the-sick-fella/DSA/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/the-sick-fella/DSA/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2540-minimum-common-value](https://github.com/the-sick-fella/DSA/tree/master/2540-minimum-common-value) |
 | [2553-separate-the-digits-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/2553-separate-the-digits-in-an-array) |
@@ -244,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/the-sick-fella/DSA/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/the-sick-fella/DSA/tree/master/2948-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3536-maximum-product-of-two-digits](https://github.com/the-sick-fella/DSA/tree/master/3536-maximum-product-of-two-digits) |
@@ -258,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0703-kth-largest-element-in-a-stream](https://github.com/the-sick-fella/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/the-sick-fella/DSA/tree/master/2333-minimum-sum-of-squared-difference) |
 ## Merge Sort
 |  |
 | ------- |
@@ -319,6 +322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/the-sick-fella/DSA/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/the-sick-fella/DSA/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/the-sick-fella/DSA/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/the-sick-fella/DSA/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/the-sick-fella/DSA/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/the-sick-fella/DSA/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
@@ -341,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/the-sick-fella/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0300-longest-increasing-subsequence](https://github.com/the-sick-fella/DSA/tree/master/0300-longest-increasing-subsequence) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/the-sick-fella/DSA/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/the-sick-fella/DSA/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2540-minimum-common-value](https://github.com/the-sick-fella/DSA/tree/master/2540-minimum-common-value) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 ## Trie
