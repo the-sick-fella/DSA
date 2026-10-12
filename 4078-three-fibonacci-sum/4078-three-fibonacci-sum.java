@@ -7,7 +7,6 @@ class Solution {
             two = three;
             three = temp;
         }
-        
         return (one + two + three) == n;
     }
 }
