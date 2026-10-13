@@ -1,16 +1,16 @@
 class Solution {
     public long maxAlternatingSum(int[] nums) {
-        PriorityQueue<Integer> heap = new PriorityQueue<>(Collections.reverseOrder());
-        for(int num : nums) heap.offer(Math.abs(num));
-        long sum = 0;
-        for(int i = 0; i<heap.size(); i++){
-        int num = heap.poll();
-        sum += num*num;
+        long temp[] = new long[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            temp[i] = (long) nums[i]*nums[i];
         }
-
-        while(!heap.isEmpty()){
-            int num = heap.poll();
-            sum -= num*num;
+        Arrays.sort(temp);
+        long sum = 0;
+        for (int i = 0; i < nums.length / 2; i++) {
+            sum -= temp[i];
+        }
+        for (int i = nums.length / 2; i < nums.length; i++) {
+            sum += temp[i];
         }
         return sum;
     }
