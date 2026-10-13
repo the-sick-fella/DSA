@@ -9,7 +9,8 @@ class Solution {
             sum -= num * num;
         }
 
-        for(int num : heap){
+        while (!heap.isEmpty()) {
+            int num = heap.poll();
             sum += num * num;
         }
         return sum;
