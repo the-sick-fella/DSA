@@ -30,30 +30,14 @@ class Twitter {
         List<Integer> ans = new ArrayList<>();
         PriorityQueue<Tweet> heap = new PriorityQueue<>((a, b) -> a.time - b.time);
 
-        if (tweetMap.containsKey(userId)) {
-            List<Tweet> tweets = tweetMap.get(userId);
-            for (int i = 1; i <= 10; i++) {
-                if (tweets.size() - i < 0)
-                    break;
-                heap.offer(tweets.get(tweets.size() - i));
-                if (heap.size() > 10)
-                    heap.poll();
-            }
-        }
+        if (tweetMap.containsKey(userId))
+            addTweets(heap, userId);
 
         if (followMap.containsKey(userId)) {
             Set<Integer> following = followMap.get(userId);
             for (int user : following) {
-                if (!tweetMap.containsKey(user))
-                    continue;
-                List<Tweet> tweets = tweetMap.get(user);
-                for (int i = 1; i <= 10; i++) {
-                    if (tweets.size() - i < 0)
-                        break;
-                    heap.offer(tweets.get(tweets.size() - i));
-                    if (heap.size() > 10)
-                        heap.poll();
-                }
+                if (tweetMap.containsKey(user))
+                    addTweets(heap, user);
             }
         }
 
@@ -64,7 +48,23 @@ class Twitter {
         return ans;
     }
 
+    private void addTweets(PriorityQueue<Tweet> heap, int user) {
+        List<Tweet> tweets = tweetMap.get(user);
+        for (int i = 1; i <= 10; i++) {
+            if (tweets.size() - i < 0)
+                break;
+            Tweet t = tweets.get(tweets.size() - i);
+            if (heap.size() == 10 && t.time < heap.peek().time)
+                break;
+            heap.offer(t);
+            if (heap.size() > 10)
+                heap.poll();
+        }
+    }
+
     public void follow(int followerId, int followeeId) {
+        if (followerId == followeeId)
+            return;
         followMap.putIfAbsent(followerId, new HashSet<>());
         followMap.get(followerId).add(followeeId);
     }
@@ -74,7 +74,8 @@ class Twitter {
             return;
         Set<Integer> set = followMap.get(followerId);
         set.remove(Integer.valueOf(followeeId));
-        if(set.size() == 0) followMap.remove(followerId);
+        if (set.size() == 0)
+            followMap.remove(followerId);
     }
 }
 
