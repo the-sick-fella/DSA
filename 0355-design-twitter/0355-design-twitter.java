@@ -28,7 +28,7 @@ class Twitter {
 
     public List<Integer> getNewsFeed(int userId) {
         List<Integer> ans = new ArrayList<>();
-        PriorityQueue<Tweet> heap = new PriorityQueue<>((a, b) -> a.time - b.time);
+        PriorityQueue<Tweet> heap = new PriorityQueue<>((a, b) -> Integer.compare(a.time, b.time));
 
         if (tweetMap.containsKey(userId))
             addTweets(heap, userId);
