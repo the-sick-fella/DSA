@@ -18,7 +18,7 @@ class Solution {
         ArrayList<Integer> ans = new ArrayList<>();
         Set<String> vis = new HashSet<>(); 
         PriorityQueue<Helper> heap = new PriorityQueue<>(
-            (p,q) -> q.sum - p.sum
+            (p,q) -> Integer.compare(q.sum, p.sum)
         );
         
         int x = n-1, y = n-1;
