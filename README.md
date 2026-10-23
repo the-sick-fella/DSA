@@ -241,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0047-permutations-ii](https://github.com/the-sick-fella/DSA/tree/master/0047-permutations-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/0215-kth-largest-element-in-an-array) |
+| [0295-find-median-from-data-stream](https://github.com/the-sick-fella/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/the-sick-fella/DSA/tree/master/0628-maximum-product-of-three-numbers) |
@@ -265,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/the-sick-fella/DSA/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/the-sick-fella/DSA/tree/master/0215-kth-largest-element-in-an-array) |
+| [0295-find-median-from-data-stream](https://github.com/the-sick-fella/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0355-design-twitter](https://github.com/the-sick-fella/DSA/tree/master/0355-design-twitter) |
 | [0621-task-scheduler](https://github.com/the-sick-fella/DSA/tree/master/0621-task-scheduler) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/the-sick-fella/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
@@ -345,6 +347,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/the-sick-fella/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/the-sick-fella/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0844-backspace-string-compare](https://github.com/the-sick-fella/DSA/tree/master/0844-backspace-string-compare) |
@@ -569,6 +572,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/the-sick-fella/DSA/tree/master/0173-binary-search-tree-iterator) |
+| [0295-find-median-from-data-stream](https://github.com/the-sick-fella/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0355-design-twitter](https://github.com/the-sick-fella/DSA/tree/master/0355-design-twitter) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/the-sick-fella/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
@@ -615,6 +619,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Data Stream
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/the-sick-fella/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/the-sick-fella/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
 ## Tournament Sort
 |  |
