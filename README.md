@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/the-sick-fella/DSA/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/the-sick-fella/DSA/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/the-sick-fella/DSA/tree/master/0040-combination-sum-ii) |
+| [0042-trapping-rain-water](https://github.com/the-sick-fella/DSA/tree/master/0042-trapping-rain-water) |
 | [0046-permutations](https://github.com/the-sick-fella/DSA/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/the-sick-fella/DSA/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/the-sick-fella/DSA/tree/master/0051-n-queens) |
@@ -174,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/the-sick-fella/DSA/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/the-sick-fella/DSA/tree/master/0044-wildcard-matching) |
 | [0062-unique-paths](https://github.com/the-sick-fella/DSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/the-sick-fella/DSA/tree/master/0063-unique-paths-ii) |
@@ -360,6 +362,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/the-sick-fella/DSA/tree/master/0042-trapping-rain-water) |
 | [0295-find-median-from-data-stream](https://github.com/the-sick-fella/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/the-sick-fella/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -386,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/the-sick-fella/DSA/tree/master/0020-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/the-sick-fella/DSA/tree/master/0042-trapping-rain-water) |
 | [0094-binary-tree-inorder-traversal](https://github.com/the-sick-fella/DSA/tree/master/0094-binary-tree-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/the-sick-fella/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0144-binary-tree-preorder-traversal](https://github.com/the-sick-fella/DSA/tree/master/0144-binary-tree-preorder-traversal) |
@@ -525,6 +529,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/the-sick-fella/DSA/tree/master/0042-trapping-rain-water) |
 | [0316-remove-duplicate-letters](https://github.com/the-sick-fella/DSA/tree/master/0316-remove-duplicate-letters) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/the-sick-fella/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Longest Common Subsequence
