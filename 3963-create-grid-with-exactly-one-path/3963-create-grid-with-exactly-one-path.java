@@ -17,7 +17,6 @@ class Solution {
             sb.append('.');
         }
         ans[m - 1] = sb.toString();
-
         return ans;
     }
 }
