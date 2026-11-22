@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3876-construct-uniform-parity-array-ii](https://github.com/the-sick-fella/DSA/tree/master/3876-construct-uniform-parity-array-ii) |
 | [3903-smallest-stable-index-i](https://github.com/the-sick-fella/DSA/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/the-sick-fella/DSA/tree/master/3904-smallest-stable-index-ii) |
+| [4099-minimum-operations-to-sort-with-locked-indices](https://github.com/the-sick-fella/DSA/tree/master/4099-minimum-operations-to-sort-with-locked-indices) |
 ## Hash Table
 |  |
 | ------- |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/the-sick-fella/DSA/tree/master/0347-top-k-frequent-elements) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/the-sick-fella/DSA/tree/master/3737-count-subarrays-with-majority-element-i) |
+| [4099-minimum-operations-to-sort-with-locked-indices](https://github.com/the-sick-fella/DSA/tree/master/4099-minimum-operations-to-sort-with-locked-indices) |
 ## Sorting
 |  |
 | ------- |
@@ -280,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/the-sick-fella/DSA/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/the-sick-fella/DSA/tree/master/3727-maximum-alternating-sum-of-squares) |
 | [3731-find-missing-elements](https://github.com/the-sick-fella/DSA/tree/master/3731-find-missing-elements) |
+| [4099-minimum-operations-to-sort-with-locked-indices](https://github.com/the-sick-fella/DSA/tree/master/4099-minimum-operations-to-sort-with-locked-indices) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -299,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0023-merge-k-sorted-lists](https://github.com/the-sick-fella/DSA/tree/master/0023-merge-k-sorted-lists) |
 | [0912-sort-an-array](https://github.com/the-sick-fella/DSA/tree/master/0912-sort-an-array) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/the-sick-fella/DSA/tree/master/3737-count-subarrays-with-majority-element-i) |
+| [4099-minimum-operations-to-sort-with-locked-indices](https://github.com/the-sick-fella/DSA/tree/master/4099-minimum-operations-to-sort-with-locked-indices) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -362,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/the-sick-fella/DSA/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/the-sick-fella/DSA/tree/master/3723-maximize-sum-of-squares-of-digits) |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/the-sick-fella/DSA/tree/master/3727-maximum-alternating-sum-of-squares) |
+| [4099-minimum-operations-to-sort-with-locked-indices](https://github.com/the-sick-fella/DSA/tree/master/4099-minimum-operations-to-sort-with-locked-indices) |
 ## Combinatorics
 |  |
 | ------- |
@@ -525,6 +530,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/the-sick-fella/DSA/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/the-sick-fella/DSA/tree/master/3737-count-subarrays-with-majority-element-i) |
+| [4099-minimum-operations-to-sort-with-locked-indices](https://github.com/the-sick-fella/DSA/tree/master/4099-minimum-operations-to-sort-with-locked-indices) |
 ## Sliding Window
 |  |
 | ------- |
@@ -663,4 +669,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/the-sick-fella/DSA/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
+| [4099-minimum-operations-to-sort-with-locked-indices](https://github.com/the-sick-fella/DSA/tree/master/4099-minimum-operations-to-sort-with-locked-indices) |
 <!---LeetCode Topics End-->
