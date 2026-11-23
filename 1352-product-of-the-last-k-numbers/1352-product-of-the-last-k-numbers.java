@@ -1,46 +1,22 @@
 class ProductOfNumbers {
-    class Node {
-        Node next;
-        Node prev;
-        int val;
-
-        public Node(int val){
-            this.val = val;
-        }
-    }
-
-    List<Node> list;
-    Node head;
-    Node tail;
+    List<Integer> list;
 
     public ProductOfNumbers() {
-        list = new LinkedList<>();
-        head = null;
+        list = new ArrayList<>();
     }
-
+    
     public void add(int num) {
-        Node node = new Node(num);
-        if(head == null){
-            head = node;
-            tail = node;
-        }
-        else {
-            tail.next = node;
-            node.prev = tail;
-            tail = tail.next;
-        }
+        list.add(num);
     }
-
+    
     public int getProduct(int k) {
-        int product = 1;
-        Node temp = tail;
+        int p = 1;
+        int idx = list.size()-1;
         for(int i = 0; i<k; i++){
-            if(temp == null) break;
-            product *= temp.val;
-            temp = temp.prev;
+            if(idx < 0) break;
+            p *= list.get(idx--);
         }
-
-        return product;
+        return p;
     }
 }
 
