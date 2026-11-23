@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1260-shift-2d-grid](https://github.com/the-sick-fella/DSA/tree/master/1260-shift-2d-grid) |
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/the-sick-fella/DSA/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1331-rank-transform-of-an-array](https://github.com/the-sick-fella/DSA/tree/master/1331-rank-transform-of-an-array) |
+| [1352-product-of-the-last-k-numbers](https://github.com/the-sick-fella/DSA/tree/master/1352-product-of-the-last-k-numbers) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/the-sick-fella/DSA/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/the-sick-fella/DSA/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1463-cherry-pickup-ii](https://github.com/the-sick-fella/DSA/tree/master/1463-cherry-pickup-ii) |
@@ -224,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0509-fibonacci-number](https://github.com/the-sick-fella/DSA/tree/master/0509-fibonacci-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/the-sick-fella/DSA/tree/master/0628-maximum-product-of-three-numbers) |
 | [0836-rectangle-overlap](https://github.com/the-sick-fella/DSA/tree/master/0836-rectangle-overlap) |
+| [1352-product-of-the-last-k-numbers](https://github.com/the-sick-fella/DSA/tree/master/1352-product-of-the-last-k-numbers) |
 | [2409-count-days-spent-together](https://github.com/the-sick-fella/DSA/tree/master/2409-count-days-spent-together) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/the-sick-fella/DSA/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3536-maximum-product-of-two-digits](https://github.com/the-sick-fella/DSA/tree/master/3536-maximum-product-of-two-digits) |
@@ -428,6 +430,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1004-max-consecutive-ones-iii](https://github.com/the-sick-fella/DSA/tree/master/1004-max-consecutive-ones-iii) |
+| [1352-product-of-the-last-k-numbers](https://github.com/the-sick-fella/DSA/tree/master/1352-product-of-the-last-k-numbers) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/the-sick-fella/DSA/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/the-sick-fella/DSA/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [2574-left-and-right-sum-differences](https://github.com/the-sick-fella/DSA/tree/master/2574-left-and-right-sum-differences) |
@@ -615,6 +618,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/the-sick-fella/DSA/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0355-design-twitter](https://github.com/the-sick-fella/DSA/tree/master/0355-design-twitter) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/the-sick-fella/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
+| [1352-product-of-the-last-k-numbers](https://github.com/the-sick-fella/DSA/tree/master/1352-product-of-the-last-k-numbers) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -661,6 +665,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/the-sick-fella/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/the-sick-fella/DSA/tree/master/0703-kth-largest-element-in-a-stream) |
+| [1352-product-of-the-last-k-numbers](https://github.com/the-sick-fella/DSA/tree/master/1352-product-of-the-last-k-numbers) |
 ## Tournament Sort
 |  |
 | ------- |
