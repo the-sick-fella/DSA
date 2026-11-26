@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/the-sick-fella/DSA/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/the-sick-fella/DSA/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/the-sick-fella/DSA/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/the-sick-fella/DSA/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/the-sick-fella/DSA/tree/master/0063-unique-paths-ii) |
 | [0078-subsets](https://github.com/the-sick-fella/DSA/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/the-sick-fella/DSA/tree/master/0090-subsets-ii) |
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/the-sick-fella/DSA/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/the-sick-fella/DSA/tree/master/0044-wildcard-matching) |
 | [0053-maximum-subarray](https://github.com/the-sick-fella/DSA/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/the-sick-fella/DSA/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/the-sick-fella/DSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/the-sick-fella/DSA/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/the-sick-fella/DSA/tree/master/0070-climbing-stairs) |
@@ -352,6 +354,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/the-sick-fella/DSA/tree/master/0044-wildcard-matching) |
+| [0055-jump-game](https://github.com/the-sick-fella/DSA/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/the-sick-fella/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0316-remove-duplicate-letters](https://github.com/the-sick-fella/DSA/tree/master/0316-remove-duplicate-letters) |
 | [0455-assign-cookies](https://github.com/the-sick-fella/DSA/tree/master/0455-assign-cookies) |
